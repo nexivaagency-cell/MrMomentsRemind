@@ -4,273 +4,577 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Moments Remind — Handcrafted Gifts & Memory Keepsakes</title>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=DM+Sans:wght@300;400;500&family=Pinyon+Script&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/png;base64,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">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=DM+Sans:wght@300;400;500&family=Pinyon+Script&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!--
+  ============================================================================
+  PHOTOS TO ADD — drop these files into an "images" folder next to this HTML
+  file, using these exact names, and they will appear automatically. Until
+  a photo arrives, a soft placeholder with a matching icon is shown instead,
+  so the page always looks finished.
+
+    https://images.unsplash.com/photo-1748803798865-9620d9bdd630?auto=format&fit=crop&q=80&w=900        https://images.unsplash.com/photo-1643403224492-961e7621c7d6?auto=format&fit=crop&q=80&w=900
+    https://images.unsplash.com/photo-1748803798865-9620d9bdd630?auto=format&fit=crop&q=80&w=900        https://images.unsplash.com/photo-1643403224492-961e7621c7d6?auto=format&fit=crop&q=80&w=900
+    https://images.unsplash.com/photo-1680563094046-5d846e2c59d1?auto=format&fit=crop&q=80&w=1200           https://images.unsplash.com/photo-1764385827352-78c20131fd47?auto=format&fit=crop&q=80&w=900
+    https://images.unsplash.com/photo-1512909006721-3d6018887383?auto=format&fit=crop&q=80&w=900
+    https://images.unsplash.com/photo-1529251333259-d36cccaf22ea?auto=format&fit=crop&q=80&w=900       https://images.unsplash.com/photo-1769791367981-8ca8e0d400a8?auto=format&fit=crop&q=80&w=900
+    https://images.unsplash.com/photo-1529066496421-d8fb2dca38a6?auto=format&fit=crop&q=80&w=900
+    https://images.unsplash.com/photo-1582053628662-c65b0e0544e9?auto=format&fit=crop&q=80&w=900        https://images.unsplash.com/photo-1626846116799-ad61f874f99d?auto=format&fit=crop&q=80&w=900
+    https://images.unsplash.com/photo-1633594308237-3dcfa56b4e69?auto=format&fit=crop&q=80&w=900       https://images.unsplash.com/photo-1680183718072-e9b55b649698?auto=format&fit=crop&q=80&w=900
+
+  Already included for you: data:image/png;base64,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, logo-seal-120.png,
+  logo-seal-240.png, logo-full.png, instagram-grid.jpg
+  ============================================================================
+-->
+
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --ink:#1a0d12;
-  --vellum:#faf6f0;
-  --parchment:#f2ebe0;
-  --blush:#eac8d0;
-  --rose:#c8556e;
-  --deep:#8b2e45;
-  --gold:#c8963c;
-  --gold-light:#e8c87a;
-  --sage:#8fa882;
-  --cream:#fdf9f4;
-  --mist:#f7f0ea;
-  --text-body:#4a2d38;
-  --text-muted:#9a7a84;
+  --ink:#1a0d12;--vellum:#faf6f0;--parchment:#f2ebe0;--blush:#eac8d0;
+  --rose:#c8556e;--deep:#8b2e45;--gold:#c8963c;--gold-light:#e8c87a;
+  --sage:#8fa882;--cream:#fdf9f4;--mist:#f7f0ea;--text-body:#4a2d38;--text-muted:#9a7a84;
 }
-html{scroll-behavior:smooth;font-size:16px}
+html{scroll-behavior:smooth}
 body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--ink);overflow-x:hidden;-webkit-font-smoothing:antialiased}
 
-/* ── GRAIN OVERLAY ── */
-#grain{position:fixed;inset:0;z-index:9999;pointer-events:none;opacity:.04;
+/* GRAIN */
+#grain{position:fixed;inset:0;z-index:9999;pointer-events:none;opacity:.035;
   background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
   background-repeat:repeat;background-size:200px}
 
-/* ── SCROLL PROGRESS ── */
-#prog{position:fixed;top:0;left:0;height:2px;width:0%;background:linear-gradient(90deg,var(--rose),var(--gold));z-index:1000;transition:width .08s linear}
+/* THREAD SCROLL */
+#rope-wrap{position:fixed;right:18px;top:0;bottom:0;z-index:400;pointer-events:none;display:flex;flex-direction:column;align-items:center}
+#rope-svg{width:24px;height:100%;overflow:visible}
+#rope-path{stroke:#c8963c;stroke-width:1.6;fill:none;stroke-linecap:round;opacity:.28;stroke-dasharray:1 7}
+#rope-knot{position:absolute;right:5px;width:13px;height:13px;background:var(--gold);border-radius:50%;box-shadow:0 2px 8px rgba(200,150,60,.45);top:0;transition:top .05s linear}
+#rope-knot::after{content:'';position:absolute;inset:3px;border-radius:50%;background:var(--gold-light)}
 
-/* ── NAV ── */
-nav{position:fixed;top:0;left:0;right:0;z-index:500;padding:1.25rem 2rem;display:flex;align-items:center;justify-content:space-between;transition:all .4s ease}
-nav.solid{background:rgba(250,246,240,.94);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);box-shadow:0 1px 0 rgba(200,150,60,.15)}
-.nav-logo{font-family:'Pinyon Script',cursive;font-size:1.8rem;color:var(--deep);text-decoration:none;letter-spacing:.02em;line-height:1}
-.nav-links{display:flex;gap:2rem;list-style:none;align-items:center}
-.nav-links a{text-decoration:none;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--text-body);font-weight:400;transition:color .2s}
-.nav-links a:hover{color:var(--rose)}
-.nav-order{background:var(--rose);color:#fff!important;padding:.5rem 1.25rem;border-radius:2px!important;letter-spacing:.08em!important}
-.nav-order:hover{background:var(--deep)!important;color:#fff!important}
+/* SCROLL PROG */
+#prog{position:fixed;top:0;left:0;height:2.5px;width:0%;background:linear-gradient(90deg,var(--rose),var(--gold),var(--rose));z-index:1001;box-shadow:0 0 8px rgba(200,85,110,.4)}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:500;padding:1.1rem 2rem;display:flex;align-items:center;justify-content:space-between;transition:all .4s ease}
+nav.solid{background:rgba(250,246,240,.96);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);box-shadow:0 1px 0 rgba(200,150,60,.15)}
+.nav-logo{display:flex;align-items:center;gap:.55rem;text-decoration:none;line-height:1}
+.nav-logo-mark{width:34px;height:34px;border-radius:50%;object-fit:cover;box-shadow:0 2px 8px rgba(139,46,69,.25);flex-shrink:0}
+.nav-logo-text{font-family:'Pinyon Script',cursive;font-size:1.8rem;color:var(--deep)}
+.nav-links{display:flex;gap:0;list-style:none;align-items:center}
+
+.nav-bm{position:relative;padding:.45rem 1.1rem;text-decoration:none;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--text-body);font-weight:400;transition:color .25s;display:flex;align-items:center}
+.nav-bm::before{content:'';position:absolute;bottom:-3px;left:50%;transform:translateX(-50%);width:0;height:0;border-left:7px solid transparent;border-right:7px solid transparent;border-top:8px solid var(--rose);opacity:0;transition:opacity .25s,bottom .25s}
+.nav-bm.active{color:var(--rose)}
+.nav-bm.active::before{opacity:1;bottom:-10px}
+.nav-bm:hover{color:var(--rose)}
+.nav-bm:hover::before{opacity:.5;bottom:-8px}
+.nav-order{background:var(--rose)!important;color:#fff!important;border-radius:2px;padding:.5rem 1.2rem!important;margin-left:.5rem}
+.nav-order:hover{background:var(--deep)!important}
+.nav-order::before{display:none!important}
+
+.nav-right{display:flex;align-items:center;gap:.6rem}
+.nav-cart{position:relative;background:none;border:none;cursor:pointer;padding:.4rem;color:var(--deep);display:flex;align-items:center;transition:color .2s,transform .2s}
+.nav-cart:hover{color:var(--rose)}
+.nav-cart-icon{width:21px;height:21px}
+.cart-count{position:absolute;top:-3px;right:-5px;background:var(--rose);color:#fff;font-size:.62rem;min-width:17px;height:17px;border-radius:50%;display:flex;align-items:center;justify-content:center;padding:0 3px;font-weight:600;line-height:1}
+#cartBtn.bump{animation:cartBump .35s ease}
+@keyframes cartBump{0%,100%{transform:scale(1)}50%{transform:scale(1.18)}}
+
 .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px}
 .hamburger span{display:block;width:24px;height:1.5px;background:var(--ink);transition:all .3s}
 .hamburger.open span:nth-child(1){transform:translateY(6.5px) rotate(45deg)}
 .hamburger.open span:nth-child(2){opacity:0}
 .hamburger.open span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg)}
-.mobile-menu{display:none;position:fixed;inset:0;background:var(--cream);z-index:490;flex-direction:column;align-items:center;justify-content:center;gap:2.5rem;opacity:0;transition:opacity .3s}
+
+.mobile-menu{display:none;position:fixed;inset:0;background:var(--cream);z-index:490;flex-direction:column;align-items:center;justify-content:center;gap:2.3rem;opacity:0;transition:opacity .3s}
 .mobile-menu.open{opacity:1}
-.mobile-menu a{font-family:'Cormorant Garamond',serif;font-size:2.2rem;color:var(--ink);text-decoration:none;font-style:italic;letter-spacing:.02em;transition:color .2s}
-.mobile-menu a:hover{color:var(--rose)}
+.mobile-menu a,.mobile-menu .m-cart-btn{font-family:'Fraunces',serif;font-size:2.1rem;color:var(--ink);text-decoration:none;font-style:italic;transition:color .2s;background:none;border:none;cursor:pointer;display:flex;align-items:center;gap:.5rem}
+.mobile-menu a:hover,.mobile-menu .m-cart-btn:hover{color:var(--rose)}
+.mobile-menu .m-cart-btn{color:var(--rose)}
+.mobile-menu .m-cart-btn svg{width:24px;height:24px}
 .mobile-menu .m-cta{font-family:'DM Sans',sans-serif!important;font-size:.9rem!important;font-style:normal!important;background:var(--rose);color:#fff!important;padding:.9rem 2.5rem;border-radius:2px;letter-spacing:.1em;text-transform:uppercase}
 .mobile-close{position:absolute;top:1.5rem;right:2rem;background:none;border:none;font-size:1.8rem;cursor:pointer;color:var(--ink)}
 
-/* ── HERO ── */
-#hero{min-height:100vh;min-height:100dvh;position:relative;overflow:hidden;display:flex;align-items:center;background:var(--vellum)}
-.hero-bg{position:absolute;inset:0}
-/* decorative paper sheets */
-.paper-sheet{position:absolute;border-radius:1px}
-.ps-1{width:55%;height:80%;top:-5%;right:-8%;background:#fff;box-shadow:0 8px 60px rgba(26,13,18,.07);transform:rotate(6deg)}
-.ps-2{width:42%;height:65%;top:15%;right:-2%;background:var(--mist);box-shadow:0 4px 30px rgba(26,13,18,.05);transform:rotate(2deg)}
-/* ribbon strip */
+/* HERO */
+#hero{position:relative;overflow:hidden;background:var(--vellum);padding:clamp(7rem,14vw,3rem) clamp(1.25rem,5vw,3rem) clamp(3rem,8vw,5rem);min-height:clamp(480px,82vh,860px);display:flex;flex-direction:column;justify-content:center}
 .ribbon-h{position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--rose),var(--gold),var(--rose))}
-/* floating items */
-#floaties{position:absolute;inset:0;pointer-events:none;overflow:hidden}
-.fi{position:absolute;opacity:0;animation:fiIn .8s ease forwards}
-@keyframes fiIn{to{opacity:1}}
-.sway{animation:fiIn .8s ease forwards,swing var(--dur,5s) ease-in-out var(--del,0s) infinite}
-@keyframes swing{0%,100%{transform:rotate(var(--r,0deg)) translateY(0)}50%{transform:rotate(calc(var(--r,0deg)+3deg)) translateY(-8px)}}
-/* washi strips */
-.washi{position:absolute;height:16px;border-radius:2px;opacity:.7}
-.w1{top:22%;left:8%;width:70px;background:repeating-linear-gradient(45deg,#f2c8d4,#f2c8d4 3px,#fce4ef 3px,#fce4ef 6px);transform:rotate(-12deg)}
-.w2{top:55%;right:14%;width:55px;background:repeating-linear-gradient(45deg,#c8d8c0,#c8d8c0 3px,#e4ede0 3px,#e4ede0 6px);transform:rotate(8deg)}
-.w3{bottom:28%;left:18%;width:80px;background:repeating-linear-gradient(45deg,#e8c878,#e8c878 3px,#faf0d0 3px,#faf0d0 6px);transform:rotate(-5deg)}
-/* polaroids */
-.pol{position:absolute;background:#fff;padding:6px 6px 26px;box-shadow:3px 6px 24px rgba(26,13,18,.18);will-change:transform}
-.pol-inner{width:100%;aspect-ratio:1;display:flex;align-items:center;justify-content:center;font-size:2rem}
-.pol-caption{font-family:'Cormorant Garamond',serif;font-size:.65rem;color:var(--text-muted);text-align:center;padding-top:5px;font-style:italic}
-/* ribbon bow */
-.bow{position:absolute;pointer-events:none}
-/* hero content */
-.hero-inner{position:relative;z-index:10;padding:6rem 2rem 4rem;max-width:680px}
+
+/* HERO 3D FLOATING PARTICLES */
+.hero-particles{position:absolute;inset:0;pointer-events:none;overflow:hidden;perspective:900px;z-index:1}
+.hp{position:absolute;border-radius:50%;opacity:0;will-change:transform,opacity;transform-style:preserve-3d;animation:hpFloat linear infinite}
+.hp::after{content:'';position:absolute;inset:0;border-radius:50%;box-shadow:inset 0 0 6px rgba(255,255,255,.45)}
+.hp-petal{border-radius:0 60% 0 60%}
+@keyframes hpFloat{
+  0%{transform:translate3d(0,40px,0) rotate(0deg) scale(.8);opacity:0}
+  8%{opacity:.55}
+  50%{transform:translate3d(var(--drift,24px),-220px,60px) rotate(160deg) scale(1)}
+  92%{opacity:.4}
+  100%{transform:translate3d(calc(var(--drift,24px) * -1),-440px,0) rotate(320deg) scale(.7);opacity:0}
+}
+@media(prefers-reduced-motion:reduce){.hero-particles{display:none}}
+@media(max-width:768px){.hero-particles{opacity:.6}}
+
+.hero-grid{position:relative;z-index:2;max-width:1180px;margin:0 auto;display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(2rem,6vw,5rem);align-items:center;width:100%}
+
+.hero-inner{position:relative;z-index:10}
 .hero-eyebrow{font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--rose);margin-bottom:1.2rem;display:flex;align-items:center;gap:.75rem}
 .hero-eyebrow::after{content:'';flex:1;height:1px;background:var(--blush);max-width:60px}
-.hero-h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.8rem,7vw,5.2rem);line-height:1.08;font-weight:300;color:var(--ink);margin-bottom:1.2rem}
+.hero-h1{font-family:'Fraunces',serif;font-size:clamp(2.6rem,6vw,3.5rem);line-height:1.08;font-weight:340;color:var(--ink);margin-bottom:1.2rem}
 .hero-h1 em{font-style:italic;color:var(--rose)}
 .hero-h1 .gold{color:var(--gold)}
-.hero-p{font-size:clamp(.88rem,2vw,1rem);color:var(--text-body);line-height:1.75;max-width:480px;margin-bottom:2.5rem;font-weight:300}
+.hero-p{font-size:clamp(.88rem,2vw,1rem);color:var(--text-body);line-height:1.75;max-width:480px;margin-bottom:2.2rem;font-weight:300}
 .hero-actions{display:flex;gap:1rem;flex-wrap:wrap;align-items:center}
 .btn-rose{background:var(--rose);color:#fff;padding:.85rem 2rem;border-radius:2px;font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;transition:all .25s;border:none;cursor:pointer;display:inline-block}
 .btn-rose:hover{background:var(--deep);transform:translateY(-2px);box-shadow:0 8px 24px rgba(139,46,69,.3)}
 .btn-ghost{background:transparent;color:var(--rose);padding:.85rem 2rem;border-radius:2px;font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;transition:all .25s;border:1.5px solid var(--blush);display:inline-block}
 .btn-ghost:hover{border-color:var(--rose);transform:translateY(-2px)}
-.hero-stats{display:flex;gap:2.5rem;margin-top:3rem;padding-top:2rem;border-top:1px solid var(--blush)}
-.stat-val{font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:600;color:var(--deep);line-height:1}
+.hero-stats{display:flex;gap:2.5rem;margin-top:2.6rem;padding-top:1.8rem;border-top:1px solid var(--blush)}
+.stat-val{font-family:'Fraunces',serif;font-size:2rem;font-weight:500;color:var(--deep);line-height:1}
 .stat-label{font-size:.7rem;color:var(--text-muted);letter-spacing:.08em;text-transform:uppercase;margin-top:.3rem}
-/* scroll arrow */
-.scroll-arrow{position:absolute;bottom:2rem;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:.5rem;animation:bob 2s ease-in-out infinite}
-@keyframes bob{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(6px)}}
-.scroll-arrow span{font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;color:var(--text-muted)}
 
-/* ── MARQUEE BAND ── */
-.marquee-band{background:var(--rose);padding:.75rem 0;overflow:hidden;display:flex;gap:0}
-.marquee-track{display:flex;gap:3rem;animation:marquee 22s linear infinite;white-space:nowrap}
-.marquee-track:nth-child(2){animation-direction:reverse}
+/* HERO VISUAL — FRAMED BOUQUET */
+.hero-visual{position:relative;display:flex;align-items:center;justify-content:center;padding:0.5rem 1rem 1rem}
+
+/* outer frame card */
+.hero-frame{position:relative;width:100%;max-width:420px;margin:0 auto}
+
+/* the photo container itself */
+.hero-frame-photo{
+  position:relative;
+  border-radius:4px;
+  overflow:hidden;
+  background:linear-gradient(160deg,var(--mist) 0%,var(--blush) 100%);
+  box-shadow:0 32px 70px -12px rgba(26,13,18,.32),0 8px 20px rgba(139,46,69,.12);
+  transform:rotate(-1.5deg);
+  transition:transform .4s ease,box-shadow .4s ease;
+  aspect-ratio:3/4;
+}
+.hero-frame-photo:hover{transform:rotate(0deg) scale(1.01);box-shadow:0 40px 80px -12px rgba(26,13,18,.38);}
+.hero-frame-photo img{
+  width:100%;height:100%;object-fit:cover;object-position:center top;
+  display:block;
+  transition:transform .6s ease;
+}
+.hero-frame-photo:hover img{transform:scale(1.04);}
+
+/* decorative border/frame overlay */
+.hero-frame-border{
+  position:absolute;inset:10px;
+  border:1.5px solid rgba(200,150,60,.35);
+  border-radius:2px;
+  pointer-events:none;
+  z-index:4;
+}
+/* corner ornaments */
+.hero-frame-corner{
+  position:absolute;width:18px;height:18px;
+  border-color:var(--gold);border-style:solid;
+  z-index:5;pointer-events:none;
+}
+.hero-frame-corner.tl{top:6px;left:6px;border-width:2px 0 0 2px}
+.hero-frame-corner.tr{top:6px;right:6px;border-width:2px 2px 0 0}
+.hero-frame-corner.bl{bottom:6px;left:6px;border-width:0 0 2px 2px}
+.hero-frame-corner.br{bottom:6px;right:6px;border-width:0 2px 2px 0}
+
+/* caption ribbon at bottom */
+.hero-frame-caption{
+  position:absolute;bottom:0;left:0;right:0;
+  background:linear-gradient(to top,rgba(26,13,18,.72) 0%,transparent 100%);
+  padding:1.4rem .9rem .7rem;
+  font-family:'Pinyon Script',cursive;
+  font-size:1.15rem;
+  color:rgba(255,255,255,.92);
+  text-align:center;
+  z-index:3;
+  letter-spacing:.04em;
+}
+
+/* floating tag bottom-left */
+.hero-frame-tag{
+  position:absolute;
+  bottom:-1.4rem;
+  left:-1.2rem;
+  background:#fff;
+  border-radius:4px;
+  box-shadow:0 10px 28px rgba(26,13,18,.18);
+  padding:.7rem 1rem;
+  display:flex;align-items:center;gap:.55rem;
+  z-index:10;
+  min-width:160px;
+}
+.hero-frame-tag-dot{
+  width:32px;height:32px;border-radius:50%;
+  background:linear-gradient(135deg,var(--rose),var(--deep));
+  display:flex;align-items:center;justify-content:center;
+  flex-shrink:0;
+  color:#fff;font-size:.85rem;
+}
+.hero-frame-tag-text{font-family:'Fraunces',serif;font-size:.78rem;line-height:1.35;color:var(--ink)}
+.hero-frame-tag-text strong{display:block;font-size:.72rem;font-weight:600;color:var(--rose);letter-spacing:.04em;text-transform:uppercase}
+
+/* floating rose chip top-right */
+.hero-frame-chip{
+  position:absolute;
+  top:-1rem;
+  right:-1rem;
+  background:var(--rose);
+  color:#fff;
+  padding:.4rem .85rem;
+  border-radius:20px;
+  font-size:.65rem;
+  font-weight:600;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  box-shadow:0 4px 14px rgba(200,85,110,.45);
+  z-index:10;
+  white-space:nowrap;
+  display:flex;align-items:center;gap:.35rem;
+}
+
+/* legacy kept for bg decorations */
+.hero-photo{display:none} /* disabled — layout is now handled by hero-visual */
+.hero-photo-mobile{display:none}
+
+#plane-hint{position:absolute;bottom:1.25rem;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:.5rem;cursor:pointer;z-index:20;border:none;background:none}
+#plane-hint span{font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:var(--text-muted)}
+.plane-anim{animation:planeBob 2.2s ease-in-out infinite}
+@keyframes planeBob{0%,100%{transform:translateY(0) rotate(-5deg)}50%{transform:translateY(8px) rotate(5deg)}}
+
+/* MARQUEE */
+.marquee-band{background:var(--rose);padding:.7rem 0;overflow:hidden}
+.marquee-track{display:flex;gap:3rem;animation:marquee 26s linear infinite;white-space:nowrap}
 @keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-.marquee-item{font-size:.75rem;letter-spacing:.15em;text-transform:uppercase;color:rgba(255,255,255,.85);display:flex;align-items:center;gap:1rem;flex-shrink:0}
-.marquee-item::after{content:'✦';font-size:.5rem;color:rgba(255,255,255,.5)}
+.marquee-item{font-size:.72rem;letter-spacing:.15em;text-transform:uppercase;color:rgba(255,255,255,.85);flex-shrink:0;display:flex;align-items:center;gap:1rem}
+.marquee-item::after{content:'✦';font-size:.5rem;color:rgba(255,255,255,.4)}
 
-/* ── FEATURED / COLLECTIONS ── */
-#collections{padding:clamp(4rem,10vw,7rem) clamp(1rem,5vw,3rem);background:var(--cream)}
+/* SECTIONS COMMON */
+#collections,#process,#testimonials,#gallery,#why,#contact{scroll-margin-top:80px}
 .section-header{text-align:center;margin-bottom:clamp(2.5rem,6vw,4rem)}
 .eyebrow{font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--rose);margin-bottom:.75rem}
-.section-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,5vw,3.2rem);font-weight:300;color:var(--ink);margin-bottom:.75rem}
+.section-title{font-family:'Fraunces',serif;font-size:clamp(2rem,5vw,3.2rem);font-weight:300;color:var(--ink);margin-bottom:.75rem}
 .section-sub{font-size:.9rem;color:var(--text-muted);font-weight:300;line-height:1.7}
-/* product grid */
-.prod-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;max-width:1100px;margin:0 auto}
-.prod-card{position:relative;cursor:pointer;overflow:hidden;background:#fff}
-.prod-card:nth-child(1){grid-column:span 2;grid-row:span 2}
-.prod-img{width:100%;aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative}
-.prod-card:nth-child(1) .prod-img{aspect-ratio:unset;height:100%}
-.prod-img-bg{width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:4rem;transition:transform .6s cubic-bezier(.25,.46,.45,.94)}
-.prod-card:hover .prod-img-bg{transform:scale(1.06)}
-.prod-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(26,13,18,.7) 0%,transparent 55%);opacity:0;transition:opacity .35s}
-.prod-card:hover .prod-overlay{opacity:1}
-.prod-info{padding:1.2rem 1rem}
-.prod-tag{font-size:.65rem;letter-spacing:.15em;text-transform:uppercase;color:var(--rose);margin-bottom:.35rem}
-.prod-name{font-family:'Cormorant Garamond',serif;font-size:1.15rem;color:var(--ink);margin-bottom:.25rem}
-.prod-price{font-size:.8rem;color:var(--text-muted)}
-.prod-hover-label{position:absolute;bottom:1.2rem;left:1.2rem;right:1.2rem;font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:#fff;opacity:0;transition:opacity .3s;display:flex;align-items:center;gap:.5rem}
-.prod-hover-label::after{content:'→';font-size:.8rem}
-.prod-card:hover .prod-hover-label{opacity:1}
-/* sticker badge */
-.badge{position:absolute;top:1rem;right:1rem;width:52px;height:52px;background:var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.55rem;letter-spacing:.08em;text-transform:uppercase;color:#fff;text-align:center;line-height:1.2;font-weight:500;transform:rotate(12deg);z-index:5;box-shadow:0 4px 12px rgba(200,150,60,.35)}
 
-/* ── CRAFT PROCESS ── */
+/* COLLECTIONS / PRODUCT CARDS */
+#collections{padding:clamp(4rem,10vw,7rem) clamp(1rem,5vw,3rem);background:var(--cream)}
+.prod-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;max-width:1180px;margin:0 auto}
+.prod-card{position:relative;background:#fff;display:flex;flex-direction:column;box-shadow:0 2px 18px rgba(26,13,18,.05);transition:transform .35s cubic-bezier(.25,.46,.45,.94),box-shadow .35s}
+.prod-card:hover{transform:translateY(-8px);box-shadow:0 24px 50px rgba(26,13,18,.14)}
+.prod-photo{position:relative;aspect-ratio:4/5;overflow:hidden;background:linear-gradient(135deg,var(--mist),var(--blush))}
+.prod-photo img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s}
+.prod-card:hover .prod-photo img{transform:scale(1.05)}
+.prod-photo.no-photo img{display:none}
+.photo-fallback{display:none;position:absolute;inset:0;flex-direction:column;align-items:center;justify-content:center;gap:.6rem;color:var(--rose)}
+.prod-photo.no-photo .photo-fallback{display:flex}
+.fb-icon{width:32px;height:32px;opacity:.55}
+.photo-fallback span{font-size:.62rem;letter-spacing:.08em;text-transform:uppercase;color:var(--text-muted)}
+.badge{position:absolute;top:.85rem;right:.85rem;width:48px;height:48px;background:var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.52rem;letter-spacing:.06em;text-transform:uppercase;color:#fff;text-align:center;line-height:1.2;font-weight:500;transform:rotate(10deg);z-index:5;box-shadow:0 4px 12px rgba(200,150,60,.35)}
+.prod-info{padding:1.1rem 1.1rem 1.3rem;display:flex;flex-direction:column;flex:1}
+.prod-tag{font-size:.62rem;letter-spacing:.13em;text-transform:uppercase;color:var(--rose);margin-bottom:.3rem}
+.prod-name{font-family:'Fraunces',serif;font-size:1.18rem;color:var(--ink);margin-bottom:.3rem;line-height:1.25}
+.prod-subtitle{font-family:'Fraunces',serif;font-style:italic;font-size:.8rem;color:var(--text-muted);margin-bottom:.8rem;line-height:1.5}
+.variant-chips{display:flex;gap:.4rem;flex-wrap:wrap;margin-bottom:.85rem}
+.variant-chip{padding:.32rem .68rem;border:1.3px solid var(--blush);border-radius:20px;background:#fff;font-size:.65rem;letter-spacing:.02em;color:var(--text-body);cursor:pointer;transition:all .2s}
+.variant-chip:hover{border-color:var(--rose)}
+.variant-chip.active{background:var(--rose);border-color:var(--rose);color:#fff}
+.prod-controls{display:flex;align-items:center;justify-content:space-between;margin-bottom:.7rem;gap:.5rem}
+.qty-stepper{display:inline-flex;align-items:center;border:1.4px solid var(--blush);border-radius:2px}
+.qty-stepper button{background:none;border:none;width:26px;height:26px;cursor:pointer;font-size:.95rem;color:var(--deep);display:flex;align-items:center;justify-content:center}
+.qty-stepper button:hover{background:var(--mist)}
+.qty-input{width:28px;text-align:center;border:none;background:none;font-size:.82rem;color:var(--ink);-moz-appearance:textfield}
+.qty-input::-webkit-outer-spin-button,.qty-input::-webkit-inner-spin-button{-webkit-appearance:none}
+.qty-stepper.sm button{width:21px;height:21px;font-size:.8rem}
+.qty-stepper.sm span{min-width:18px;text-align:center;font-size:.76rem;display:inline-block}
+.prod-price{font-family:'Fraunces',serif;font-size:1.15rem;color:var(--deep);white-space:nowrap}
+.prod-note{font-size:.62rem;color:var(--text-muted);margin-top:-.4rem;margin-bottom:.7rem;line-height:1.5}
+.note-toggle{margin-bottom:.8rem}
+.note-toggle summary{font-size:.7rem;color:var(--rose);cursor:pointer;letter-spacing:.02em;list-style:none}
+.note-toggle summary::-webkit-details-marker{display:none}
+.note-toggle[open] summary{margin-bottom:.5rem}
+.note-input{width:100%;border:1.3px solid var(--blush);border-radius:2px;padding:.55rem;font-family:'DM Sans',sans-serif;font-size:.76rem;min-height:58px;resize:none;outline:none}
+.note-input:focus{border-color:var(--rose)}
+.btn-add-cart{margin-top:auto;width:100%;background:var(--ink);color:#fff;border:none;padding:.7rem;font-size:.68rem;letter-spacing:.09em;text-transform:uppercase;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:.5rem;transition:background .25s,transform .2s;border-radius:2px}
+.btn-add-cart svg{width:14px;height:14px}
+.btn-add-cart:hover{background:var(--rose);transform:translateY(-2px)}
+
+/* INSTAGRAM SHOWCASE */
+#gallery{padding:clamp(4rem,10vw,7rem) clamp(1rem,5vw,3rem);background:var(--ink)}
+#gallery .eyebrow{color:var(--gold-light)}
+#gallery .section-title{color:#fff}
+#gallery .section-sub{color:rgba(255,255,255,.55)}
+.ig-wrap{display:flex;justify-content:center;margin-top:1.5rem}
+.ig-frame{position:relative;display:block;max-width:520px;width:100%;border-radius:8px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.4);text-decoration:none;cursor:pointer}
+.ig-frame img{width:100%;display:block;transition:transform .6s}
+.ig-frame:hover img{transform:scale(1.04)}
+.ig-overlay{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(26,13,18,.4);opacity:0;transition:opacity .3s ease;pointer-events:none}
+.ig-frame:hover .ig-overlay,.ig-frame:focus-visible .ig-overlay{opacity:1}
+.ig-meta{display:flex;flex-direction:column;align-items:center;gap:.7rem;margin-top:1.1rem}
+.ig-badge{display:inline-flex;align-items:center;gap:.5rem;background:linear-gradient(135deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);color:#fff;padding:.6rem 1.4rem;border-radius:30px;font-size:.8rem;font-weight:600;letter-spacing:.03em;box-shadow:0 6px 20px rgba(0,0,0,.35);text-decoration:none;transform:translateY(6px);transition:transform .3s ease}
+.ig-frame:hover .ig-badge{transform:translateY(0)}
+.ig-badge i{font-size:.9rem}
+.ig-handle{color:rgba(255,255,255,.6);font-size:.82rem;letter-spacing:.05em;font-weight:300}
+.ig-stats{display:flex;gap:2rem;justify-content:center;margin-top:1.5rem}
+.ig-stat{text-align:center;color:rgba(255,255,255,.7)}
+.ig-stat strong{display:block;font-family:'Fraunces',serif;font-size:1.4rem;color:#fff;line-height:1}
+.ig-stat span{font-size:.68rem;letter-spacing:.1em;text-transform:uppercase}
+
+/* PROCESS */
 #process{padding:clamp(4rem,10vw,7rem) clamp(1rem,5vw,3rem);background:var(--parchment);position:relative;overflow:hidden}
 #process::before{content:'';position:absolute;top:-2px;left:0;right:0;height:60px;background:var(--cream);clip-path:polygon(0 0,100% 0,100% 0,0 100%)}
 #process::after{content:'';position:absolute;bottom:-2px;left:0;right:0;height:60px;background:var(--vellum);clip-path:polygon(0 100%,100% 0,100% 100%)}
 .process-inner{max-width:1000px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,5rem);align-items:center}
-.process-left{}
 .process-steps{display:flex;flex-direction:column;gap:2rem;margin-top:2.5rem}
-.step{display:flex;gap:1.5rem;align-items:flex-start}
-.step-num{font-family:'Cormorant Garamond',serif;font-size:3rem;line-height:1;color:var(--blush);font-weight:300;flex-shrink:0;width:50px;text-align:center}
-.step-text{}
-.step-title{font-family:'Cormorant Garamond',serif;font-size:1.15rem;color:var(--ink);margin-bottom:.35rem}
+.step{display:flex;gap:1.5rem;align-items:flex-start;opacity:0;transform:translateX(-20px);transition:opacity .6s ease,transform .6s ease}
+.step.in{opacity:1;transform:none}
+.step-num{font-family:'Fraunces',serif;font-size:3rem;line-height:1;color:var(--blush);font-weight:300;flex-shrink:0;width:50px;text-align:center}
+.step-title{font-family:'Fraunces',serif;font-size:1.15rem;color:var(--ink);margin-bottom:.35rem}
 .step-desc{font-size:.82rem;color:var(--text-muted);line-height:1.7;font-weight:300}
-.process-right{display:flex;flex-direction:column;gap:1rem}
 .craft-card{background:#fff;padding:1.8rem;box-shadow:0 2px 20px rgba(26,13,18,.06);position:relative;transition:transform .3s ease,box-shadow .3s}
-.craft-card:hover{transform:translateY(-4px);box-shadow:0 8px 32px rgba(26,13,18,.1)}
+.craft-card:hover{transform:translateY(-4px) rotateX(2deg);box-shadow:0 8px 32px rgba(26,13,18,.1)}
 .craft-card::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--rose)}
 .craft-icon{font-size:1.6rem;margin-bottom:.75rem}
-.craft-title{font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:var(--ink);margin-bottom:.4rem}
+.craft-title{font-family:'Fraunces',serif;font-size:1.1rem;color:var(--ink);margin-bottom:.4rem}
 .craft-desc{font-size:.8rem;color:var(--text-muted);line-height:1.7}
+.process-right{display:flex;flex-direction:column;gap:1rem}
 
-/* ── TESTIMONIALS ── */
+/* TESTIMONIALS */
 #testimonials{padding:clamp(4rem,10vw,7rem) clamp(1rem,5vw,3rem);background:var(--vellum)}
 .testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;max-width:1000px;margin:2.5rem auto 0}
-.testi-card{background:#fff;padding:2rem 1.75rem;position:relative;border-top:3px solid var(--blush);transition:border-color .3s,transform .3s}
-.testi-card:hover{border-top-color:var(--rose);transform:translateY(-4px)}
-.quote-mark{font-family:'Cormorant Garamond',serif;font-size:4rem;color:var(--blush);line-height:.8;margin-bottom:.5rem;font-weight:300}
-.testi-text{font-family:'Cormorant Garamond',serif;font-size:1.05rem;font-style:italic;color:var(--text-body);line-height:1.7;margin-bottom:1.5rem}
+.testi-card{background:#fff;padding:2rem 1.75rem;position:relative;border-top:3px solid var(--blush);transition:border-color .3s,transform .3s,box-shadow .3s;transform-style:preserve-3d}
+.testi-card:hover{border-top-color:var(--rose);transform:translateY(-6px) rotateX(2deg);box-shadow:0 16px 40px rgba(26,13,18,.1)}
+.quote-mark{font-family:'Fraunces',serif;font-size:4rem;color:var(--blush);line-height:.8;margin-bottom:.5rem;font-weight:300}
+.testi-text{font-family:'Fraunces',serif;font-size:1.05rem;font-style:italic;color:var(--text-body);line-height:1.7;margin-bottom:1.5rem}
 .testi-person{display:flex;align-items:center;gap:.75rem}
-.testi-avatar{width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0}
+.testi-avatar{width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.85rem;font-weight:600;font-family:'Fraunces',serif;color:var(--deep);flex-shrink:0}
 .testi-name{font-size:.85rem;font-weight:500;color:var(--ink)}
 .testi-detail{font-size:.72rem;color:var(--text-muted);letter-spacing:.05em}
 .stars{color:var(--gold);font-size:.85rem;letter-spacing:.1em;margin-bottom:.75rem}
 
-/* ── GALLERY / SHOWCASE ── */
-#gallery{padding:clamp(4rem,10vw,7rem) clamp(1rem,5vw,3rem);background:var(--ink)}
-#gallery .eyebrow{color:var(--gold-light)}
-#gallery .section-title{color:#fff}
-#gallery .section-sub{color:rgba(255,255,255,.5)}
-.gallery-strip{display:flex;gap:1rem;overflow-x:auto;scrollbar-width:none;-ms-overflow-style:none;padding:.5rem 0;margin-top:2.5rem;scroll-snap-type:x mandatory}
-.gallery-strip::-webkit-scrollbar{display:none}
-.gallery-item{flex-shrink:0;width:clamp(160px,25vw,260px);aspect-ratio:3/4;background:var(--parchment);border-radius:1px;display:flex;align-items:center;justify-content:center;font-size:3.5rem;scroll-snap-align:start;position:relative;overflow:hidden;cursor:pointer;transition:transform .3s}
-.gallery-item:hover{transform:scale(.97)}
-.gallery-item-inner{transition:transform .5s cubic-bezier(.25,.46,.45,.94)}
-.gallery-item:hover .gallery-item-inner{transform:scale(1.08)}
-.gallery-label{position:absolute;bottom:0;left:0;right:0;padding:1rem;background:linear-gradient(to top,rgba(26,13,18,.8),transparent);color:#fff;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;opacity:0;transition:opacity .3s}
-.gallery-item:hover .gallery-label{opacity:1}
-
-/* ── WHY ── */
-#why{padding:clamp(4rem,10vw,7rem) clamp(1rem,5vw,3rem);background:var(--cream);display:flex;align-items:center;justify-content:center;flex-direction:column}
-.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;max-width:1000px;width:100%;margin-top:2.5rem}
-.why-item{text-align:center;padding:2rem 1.5rem;transition:background .3s}
-.why-item:hover{background:var(--mist)}
-.why-icon{font-size:2rem;margin-bottom:1rem}
-.why-title{font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:var(--ink);margin-bottom:.5rem}
+/* WHY */
+#why{padding:clamp(4rem,10vw,7rem) clamp(1rem,5vw,3rem);background:var(--cream)}
+.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;max-width:1000px;width:100%;margin:2.5rem auto 0}
+.why-item{text-align:center;padding:2rem 1.5rem;transition:all .3s;border:1px solid transparent}
+.why-item:hover{background:var(--mist);border-color:var(--blush);transform:translateY(-4px) rotateX(3deg);box-shadow:0 12px 28px rgba(26,13,18,.06)}
+.why-icon{display:flex;justify-content:center;margin-bottom:1rem}
+.why-icon svg{width:28px;height:28px;color:var(--rose)}
+.why-title{font-family:'Fraunces',serif;font-size:1.1rem;color:var(--ink);margin-bottom:.5rem}
 .why-desc{font-size:.78rem;color:var(--text-muted);line-height:1.7;font-weight:300}
-.why-divider{width:1px;background:var(--blush);align-self:stretch;margin:1rem 0}
 
-/* ── CTA BANNER ── */
+/* CONTACT */
+#contact{padding:clamp(4rem,10vw,7rem) clamp(1rem,5vw,3rem);background:linear-gradient(135deg,var(--vellum),var(--parchment));position:relative;overflow:hidden}
+#contact::before{content:'';position:absolute;top:-80px;right:-80px;width:300px;height:300px;background:radial-gradient(circle,rgba(200,85,110,.08),transparent 70%);border-radius:50%}
+#contact::after{content:'';position:absolute;bottom:-60px;left:-60px;width:240px;height:240px;background:radial-gradient(circle,rgba(200,150,60,.08),transparent 70%);border-radius:50%}
+.contact-inner{max-width:900px;margin:0 auto;display:grid;grid-template-columns:1fr 1.2fr;gap:clamp(2rem,5vw,5rem);align-items:start}
+.contact-info-items{margin-top:2rem;display:flex;flex-direction:column;gap:1.5rem}
+.ci{display:flex;align-items:flex-start;gap:1rem}
+.ci-icon{font-size:1.4rem;margin-top:.1rem;flex-shrink:0}
+.ci-label{font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--rose);margin-bottom:.2rem}
+.ci-val{font-size:.9rem;color:var(--text-body);line-height:1.5}
+.contact-bookmarks{position:absolute;left:0;top:10%;display:flex;flex-direction:column;gap:0}
+.cb{width:28px;height:80px;border-radius:0 0 14px 14px;display:flex;align-items:flex-start;justify-content:center;padding-top:.4rem;font-size:.8rem;transition:height .3s;cursor:default}
+.cb:hover{height:110px}
+
+.contact-form{background:#fff;padding:2.5rem;box-shadow:0 4px 40px rgba(26,13,18,.08);position:relative}
+.contact-form::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--rose),var(--gold))}
+.contact-form.flash{animation:formFlash 1.1s ease}
+@keyframes formFlash{0%{box-shadow:0 4px 40px rgba(26,13,18,.08)}50%{box-shadow:0 4px 56px rgba(200,85,110,.5)}100%{box-shadow:0 4px 40px rgba(26,13,18,.08)}}
+.form-title{font-family:'Fraunces',serif;font-size:1.5rem;color:var(--ink);margin-bottom:.35rem}
+.form-sub{font-size:.8rem;color:var(--text-muted);margin-bottom:1.1rem;line-height:1.6}
+.form-cart-hint{background:var(--mist);color:var(--deep);font-size:.78rem;padding:.6rem .9rem;border-radius:3px;margin-bottom:1.4rem;display:flex;align-items:center;gap:.4rem}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1rem}
+.form-group{display:flex;flex-direction:column;gap:.4rem;margin-bottom:1rem}
+.form-group.full{grid-column:1/-1}
+.form-label{font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--text-muted)}
+.form-input,.form-textarea,.form-select{width:100%;padding:.75rem .9rem;border:1.5px solid var(--blush);border-radius:2px;font-family:'DM Sans',sans-serif;font-size:.88rem;color:var(--ink);background:#fff;transition:border-color .2s,box-shadow .2s;outline:none;resize:none}
+.form-input:focus,.form-textarea:focus,.form-select:focus{border-color:var(--rose);box-shadow:0 0 0 3px rgba(200,85,110,.1)}
+.form-textarea{min-height:110px;line-height:1.6}
+.form-select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%239a7a84' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right .9rem center;cursor:pointer}
+.btn-wa{width:100%;padding:1rem;background:linear-gradient(135deg,#25D366,#128C7E);color:#fff;border:none;border-radius:2px;font-family:'DM Sans',sans-serif;font-size:.82rem;letter-spacing:.12em;text-transform:uppercase;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:.75rem;transition:all .3s;position:relative;overflow:hidden}
+.btn-wa:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(37,211,102,.4)}
+.btn-wa::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(255,255,255,.15),transparent);pointer-events:none}
+.wa-icon{font-size:1.2rem}
+.form-note{font-size:.7rem;color:var(--text-muted);text-align:center;margin-top:.85rem;line-height:1.6}
+
+@keyframes planeSend{0%{transform:translate(0,0) rotate(0deg) scale(1)}40%{transform:translate(30px,-20px) rotate(-15deg) scale(.8)}100%{transform:translate(120px,-80px) rotate(-30deg) scale(.3);opacity:0}}
+.sending-plane{animation:planeSend .8s ease forwards}
+
+/* CTA BAND */
 #cta-band{padding:clamp(4rem,10vw,6rem) 2rem;background:var(--rose);text-align:center;position:relative;overflow:hidden}
 #cta-band::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 18c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z' fill='rgba(255,255,255,.06)'/%3E%3C/svg%3E") repeat;background-size:40px}
+.cta-seal{width:64px;height:64px;border-radius:50%;margin:0 auto 1.2rem;display:block;box-shadow:0 8px 24px rgba(0,0,0,.25);position:relative;z-index:1}
 #cta-band .section-title{color:#fff;position:relative;z-index:1}
 #cta-band .section-sub{color:rgba(255,255,255,.75);position:relative;z-index:1;margin-bottom:2rem}
-.btn-white{background:#fff;color:var(--rose);padding:.9rem 2.5rem;border-radius:2px;font-size:.82rem;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;transition:all .25s;display:inline-block;font-weight:500}
+.btn-white{background:#fff;color:var(--rose);padding:.9rem 2.5rem;border-radius:2px;font-size:.82rem;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;transition:all .25s;display:inline-flex;align-items:center;gap:.6rem;font-weight:500}
 .btn-white:hover{background:var(--ink);color:#fff;transform:translateY(-3px);box-shadow:0 10px 30px rgba(26,13,18,.3)}
 .cta-note{font-size:.7rem;color:rgba(255,255,255,.6);margin-top:1rem;letter-spacing:.05em;position:relative;z-index:1}
+.cta-features{display:flex;justify-content:center;gap:2.5rem;margin:2rem auto 0;position:relative;z-index:1;flex-wrap:wrap;max-width:700px}
+.cta-feat{display:flex;align-items:center;gap:.5rem;color:rgba(255,255,255,.85);font-size:.78rem}
+.cta-feat i{font-size:.95rem;color:rgba(255,255,255,.7)}
 
-/* ── FOOTER ── */
+/* FOOTER */
 footer{background:var(--ink);color:rgba(255,255,255,.65);padding:clamp(3rem,7vw,5rem) clamp(1rem,5vw,3rem) 1.5rem}
 .footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:3rem;max-width:1100px;margin:0 auto 3rem}
-.footer-brand{}
-.footer-logo{font-family:'Pinyon Script',cursive;font-size:2.2rem;color:#fff;margin-bottom:.75rem;display:block;line-height:1}
+.footer-brand{display:flex;align-items:center;gap:.65rem;margin-bottom:.9rem}
+.footer-mark{width:42px;height:42px;border-radius:50%;flex-shrink:0}
+.footer-logo{font-family:'Pinyon Script',cursive;font-size:2rem;color:#fff;line-height:1}
 .footer-tagline{font-size:.8rem;line-height:1.7;color:rgba(255,255,255,.5);max-width:240px;margin-bottom:1.5rem}
 .footer-social{display:flex;gap:.75rem}
 .soc{width:38px;height:38px;border:1px solid rgba(255,255,255,.15);border-radius:1px;display:flex;align-items:center;justify-content:center;font-size:.9rem;cursor:pointer;transition:all .2s;text-decoration:none;color:rgba(255,255,255,.6)}
 .soc:hover{background:var(--rose);border-color:var(--rose);color:#fff;transform:translateY(-2px)}
-.footer-col-title{font-size:.68rem;letter-spacing:.15em;text-transform:uppercase;color:rgba(255,255,255,.4);margin-bottom:1.2rem}
+.footer-col-title{font-size:.68rem;letter-spacing:.15em;text-transform:uppercase;color:rgba(255,255,255,.35);margin-bottom:1.2rem}
 .footer-links{list-style:none;display:flex;flex-direction:column;gap:.7rem}
-.footer-links a{text-decoration:none;color:rgba(255,255,255,.6);font-size:.82rem;transition:color .2s}
+.footer-links a{text-decoration:none;color:rgba(255,255,255,.55);font-size:.82rem;transition:color .2s}
 .footer-links a:hover{color:#fff}
 .footer-bottom{max-width:1100px;margin:0 auto;padding-top:1.5rem;border-top:1px solid rgba(255,255,255,.08);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
 .footer-copy{font-size:.72rem;color:rgba(255,255,255,.3);letter-spacing:.05em}
 
-/* ── BACK TO TOP ── */
-#btt{position:fixed;bottom:1.5rem;right:1.5rem;width:46px;height:46px;background:var(--rose);color:#fff;border:none;cursor:pointer;border-radius:2px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;opacity:0;pointer-events:none;transition:all .3s;z-index:100;box-shadow:0 4px 20px rgba(200,85,110,.4)}
+/* BACK TO TOP */
+#btt{position:fixed;bottom:1.5rem;right:50px;width:46px;height:46px;background:var(--rose);color:#fff;border:none;cursor:pointer;border-radius:2px;display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:all .3s;z-index:100;box-shadow:0 4px 20px rgba(200,85,110,.4);flex-direction:column;gap:1px}
 #btt.show{opacity:1;pointer-events:auto}
 #btt:hover{background:var(--deep);transform:translateY(-3px)}
 
-/* ── REVEAL ── */
+/* TOAST */
+.toast{position:fixed;bottom:5.5rem;left:50%;transform:translateX(-50%) translateY(20px);background:var(--ink);color:#fff;padding:.7rem 1.3rem;border-radius:30px;font-size:.78rem;opacity:0;pointer-events:none;transition:opacity .3s,transform .3s;z-index:1500;display:flex;align-items:center;gap:.5rem;box-shadow:0 8px 24px rgba(26,13,18,.3);max-width:90vw;text-align:center}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+/* FLYING SEAL (add-to-cart motion) */
+.flying-seal{position:fixed;width:26px;height:26px;border-radius:50%;z-index:2000;pointer-events:none;box-shadow:0 4px 14px rgba(26,13,18,.35);opacity:0}
+.flying-seal.go{animation:sealFly .7s cubic-bezier(.2,.7,.3,1) forwards}
+@keyframes sealFly{0%{opacity:1;transform:translate(0,0) scale(1) rotate(0deg)}70%{opacity:1}100%{opacity:0;transform:translate(var(--dx),var(--dy)) scale(.25) rotate(220deg)}}
+
+/* CART DRAWER — professional shop-cart layout */
+.cart-overlay{position:fixed;inset:0;background:rgba(26,13,18,.5);backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px);z-index:800;opacity:0;pointer-events:none;transition:opacity .35s}
+.cart-overlay.open{opacity:1;pointer-events:auto}
+.cart-drawer{position:fixed;top:0;right:0;height:100%;width:min(460px,94vw);max-width:460px;background:var(--cream);z-index:801;box-shadow:-16px 0 48px rgba(26,13,18,.22);transform:translateX(100%);transition:transform .42s cubic-bezier(.25,.46,.45,.94);display:flex;flex-direction:column}
+.cart-drawer.open{transform:translateX(0)}
+.cart-head{display:flex;align-items:center;justify-content:space-between;padding:1.35rem 1.6rem;background:#fff;border-bottom:1px solid var(--blush);box-shadow:0 2px 12px rgba(26,13,18,.04);position:relative;z-index:2;flex-shrink:0}
+.cart-title{display:flex;align-items:center;gap:.6rem;font-family:'Fraunces',serif;font-size:1.28rem;color:var(--ink)}
+.cart-title svg{width:19px;height:19px;color:var(--rose)}
+.cart-title-count{font-family:'DM Sans',sans-serif;font-size:.66rem;font-weight:600;color:#fff;background:var(--rose);border-radius:20px;padding:.16rem .58rem;letter-spacing:.02em}
+.cart-close{background:none;border:none;font-size:1.5rem;cursor:pointer;color:var(--text-muted);line-height:1;padding:.3rem .5rem;border-radius:50%;transition:background .2s,color .2s}
+.cart-close:hover{color:var(--rose);background:var(--mist)}
+.cart-body{flex:1;overflow-y:auto;padding:1.1rem 1.4rem;scrollbar-width:thin;scrollbar-color:var(--blush) transparent}
+.cart-body::-webkit-scrollbar{width:6px}
+.cart-body::-webkit-scrollbar-track{background:transparent}
+.cart-body::-webkit-scrollbar-thumb{background:var(--blush);border-radius:10px}
+.cart-body::-webkit-scrollbar-thumb:hover{background:var(--rose)}
+.cart-empty{text-align:center;padding:4rem 1.2rem 2.5rem;color:var(--text-muted);display:flex;flex-direction:column;align-items:center}
+.cart-empty svg{width:42px;height:42px;color:var(--blush);margin-bottom:1.1rem}
+.cart-empty p{font-size:.85rem;line-height:1.75;margin-bottom:1.5rem;max-width:260px}
+.cart-empty-cta{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--rose);border:1.4px solid var(--blush);border-radius:2px;padding:.65rem 1.4rem;text-decoration:none;transition:all .2s;background:none;cursor:pointer}
+.cart-empty-cta:hover{border-color:var(--rose);background:var(--mist)}
+.cart-item{display:flex;gap:.95rem;padding:.95rem;margin-bottom:.7rem;background:#fff;border-radius:6px;box-shadow:0 1px 3px rgba(26,13,18,.06);border:1px solid var(--mist);transition:box-shadow .2s,transform .2s}
+.cart-item:hover{box-shadow:0 6px 18px rgba(26,13,18,.09);transform:translateY(-1px)}
+.cart-item:last-child{margin-bottom:0}
+.ci-thumb{width:66px;height:66px;flex-shrink:0;border-radius:5px;overflow:hidden;background:var(--mist);position:relative;display:flex;align-items:center;justify-content:center}
+.ci-thumb img{width:100%;height:100%;object-fit:cover}
+.ci-fallback-icon{width:22px;height:22px;color:var(--blush);display:none}
+.ci-thumb.no-photo .ci-fallback-icon{display:block}
+.ci-info{flex:1;min-width:0}
+.ci-name{font-size:.83rem;color:var(--ink);font-weight:500;margin-bottom:.25rem;line-height:1.4}
+.ci-note{font-family:'Fraunces',serif;font-style:italic;font-size:.76rem;color:var(--text-muted);margin-bottom:.5rem;line-height:1.4;overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.ci-row{display:flex;align-items:center;gap:.7rem}
+.ci-price{font-size:.8rem;color:var(--deep);font-weight:600;margin-left:auto;font-family:'Fraunces',serif}
+.ci-remove{background:none;border:none;font-size:1.15rem;color:var(--text-muted);cursor:pointer;padding:.1rem .3rem;line-height:1;border-radius:50%;transition:background .2s,color .2s}
+.ci-remove:hover{color:var(--rose);background:var(--mist)}
+.cart-foot{padding:1.2rem 1.6rem 1.5rem;border-top:1px solid var(--blush);background:#fff;box-shadow:0 -4px 16px rgba(26,13,18,.05);position:relative;z-index:2;flex-shrink:0}
+.cart-item-total{display:flex;justify-content:space-between;font-size:.74rem;color:var(--text-muted);letter-spacing:.03em;text-transform:uppercase;margin-bottom:.55rem}
+.cart-subtotal{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:.5rem;font-size:.9rem;color:var(--ink);padding-top:.55rem;border-top:1px dashed var(--blush)}
+.cart-subtotal strong{font-family:'Fraunces',serif;font-size:1.55rem;color:var(--deep)}
+.cart-disclaimer{font-size:.68rem;color:var(--text-muted);line-height:1.6;margin-bottom:1rem}
+.cart-checkout{width:100%}
+.cart-checkout:disabled{opacity:.4;cursor:not-allowed;transform:none!important}
+@media(max-width:480px){
+  .cart-drawer{width:100vw;max-width:100vw}
+  .cart-head{padding:1.15rem 1.15rem}
+  .cart-body{padding:1rem}
+  .cart-foot{padding:1rem 1.15rem 1.25rem}
+}
+
+/* REVEAL */
 .reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
 .reveal.in{opacity:1;transform:none}
 
-/* ── LOADING ── */
+/* LOADER */
 #loader{position:fixed;inset:0;background:var(--cream);z-index:9000;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1.2rem;transition:opacity .7s ease}
 #loader.out{opacity:0;pointer-events:none}
-.ld-logo{font-family:'Pinyon Script',cursive;font-size:3rem;color:var(--deep);animation:ldPulse 1.4s ease-in-out infinite}
-@keyframes ldPulse{0%,100%{opacity:.5;transform:scale(.97)}50%{opacity:1;transform:scale(1)}}
-.ld-bar{width:100px;height:2px;background:var(--blush);border-radius:2px;overflow:hidden}
-.ld-fill{height:100%;background:var(--rose);border-radius:2px;animation:ldFill 1.6s ease forwards}
+.ld-mark{width:96px;height:96px;border-radius:50%;animation:ldPulse 1.4s ease-in-out infinite;box-shadow:0 8px 30px rgba(139,46,69,.25)}
+@keyframes ldPulse{0%,100%{opacity:.55;transform:scale(.97)}50%{opacity:1;transform:scale(1)}}
+.ld-bar{width:120px;height:2px;background:var(--blush);border-radius:2px;overflow:hidden}
+.ld-fill{height:100%;background:linear-gradient(90deg,var(--rose),var(--gold));border-radius:2px;animation:ldFill 1.6s ease forwards}
 @keyframes ldFill{from{width:0}to{width:100%}}
 
-/* ── RESPONSIVE ── */
+/* CHECKOUT ITEMS BLOCK */
+.checkout-items-block{background:var(--mist);border:1.3px solid var(--blush);border-radius:4px;padding:1rem 1.1rem;margin-bottom:1.2rem}
+.checkout-items-title{font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--rose);margin-bottom:.7rem;display:flex;align-items:center;gap:.4rem}
+.checkout-item-row{display:flex;justify-content:space-between;align-items:center;font-size:.8rem;color:var(--text-body);padding:.3rem 0;border-bottom:1px dashed var(--blush)}
+.checkout-item-row:last-child{border-bottom:none}
+.checkout-item-name{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.checkout-item-price{font-weight:500;color:var(--deep);white-space:nowrap;margin-left:.5rem}
+.checkout-subtotal{display:flex;justify-content:space-between;margin-top:.6rem;padding-top:.6rem;border-top:1.5px solid var(--blush);font-size:.82rem;font-weight:600;color:var(--deep)}
+.checkout-empty-note{font-size:.78rem;color:var(--text-muted);font-style:italic}
+/* OPTIONAL CUSTOM FIELD */
+.optional-custom{background:var(--mist);border:1.3px dashed var(--blush);border-radius:4px;padding:1rem 1.1rem;margin-bottom:1.2rem}
+.optional-custom-title{font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--text-muted);margin-bottom:.5rem;display:flex;align-items:center;gap:.4rem}
+.optional-badge{background:var(--sage);color:#fff;font-size:.6rem;padding:.15rem .45rem;border-radius:10px;letter-spacing:.04em;text-transform:uppercase;font-weight:500}
+
+/* CUSTOM ORDER TOGGLE */
+.custom-toggle{width:100%;display:flex;align-items:center;justify-content:space-between;gap:.75rem;background:var(--vellum);border:1.3px solid var(--blush);border-radius:4px;padding:.85rem 1.05rem;font-family:'DM Sans',sans-serif;font-size:.8rem;color:var(--deep);cursor:pointer;transition:border-color .2s,background .2s;margin-bottom:1.2rem;text-align:left}
+.custom-toggle:hover{border-color:var(--rose);background:var(--mist)}
+.custom-toggle.open{border-color:var(--rose);background:var(--mist);border-bottom-left-radius:0;border-bottom-right-radius:0;margin-bottom:0}
+.custom-toggle-left{display:flex;align-items:center;gap:.6rem}
+.custom-toggle-left i{color:var(--rose);font-size:.85rem}
+.custom-toggle-chevron{font-size:.7rem;color:var(--text-muted);transition:transform .3s ease}
+.custom-toggle.open .custom-toggle-chevron{transform:rotate(180deg)}
+.custom-order-panel{overflow:hidden;max-height:0;transition:max-height .45s cubic-bezier(.25,.46,.45,.94),border-color .3s;border:1.3px solid transparent;border-top:none;border-radius:0 0 4px 4px;background:var(--cream)}
+.custom-order-panel.open{max-height:900px;margin-bottom:1.2rem;border-color:var(--rose)}
+.custom-order-panel-inner{padding:1.3rem 1.1rem .2rem}
+.custom-order-intro{font-size:.78rem;color:var(--text-muted);line-height:1.65;margin-bottom:1.1rem;font-style:italic;font-family:'Fraunces',serif}
+
+/* RESPONSIVE */
 @media(max-width:1024px){
+  .hero-grid{grid-template-columns:1fr;gap:3rem}
+  .hero-visual{order:-1;padding:1rem 2rem 2rem}
+  .hero-frame{max-width:360px}
   .prod-grid{grid-template-columns:repeat(2,1fr)}
-  .prod-card:nth-child(1){grid-column:span 2;grid-row:span 1}
-  .prod-card:nth-child(1) .prod-img{aspect-ratio:16/7}
   .footer-grid{grid-template-columns:1fr 1fr}
   .why-grid{grid-template-columns:repeat(2,1fr)}
   .process-inner{grid-template-columns:1fr}
+  .card3d-wrap{right:8%;bottom:10%;transform:scale(.65)}
+  .contact-inner{grid-template-columns:1fr}
 }
 @media(max-width:768px){
   nav{padding:1rem 1.25rem}
+   #plane-hint{display:none}
   .nav-links{display:none}
   .hamburger{display:flex}
-  .hero-inner{padding:6rem 1.25rem 3rem}
+  #rope-wrap{right:6px}
+  #rope-knot{width:11px;height:11px}
   .hero-stats{gap:1.5rem;flex-wrap:wrap}
-  .pol,.washi,.bow{display:none}
+  .pol,.washi{display:none}
   .ps-1{display:none}
-  .ps-2{right:-30%;width:70%}
-  .prod-grid{grid-template-columns:1fr}
-  .prod-card:nth-child(1){grid-column:span 1}
-  .prod-card:nth-child(1) .prod-img{aspect-ratio:4/3}
+  .hero-visual{padding:.5rem 1.5rem 2rem}
+  .hero-frame{max-width:300px}
+  .hero-frame-tag{display:none}
+  .card3d-wrap{display:none}
+  .prod-grid{grid-template-columns:1fr;max-width:420px}
   .testi-grid{grid-template-columns:1fr}
   .footer-grid{grid-template-columns:1fr;gap:2rem}
   .footer-bottom{flex-direction:column;text-align:center}
   #process::before,#process::after{display:none}
   .process-inner{grid-template-columns:1fr;gap:3rem}
+  .form-row{grid-template-columns:1fr}
+  .contact-bookmarks{display:none}
+  #btt{right:1rem}
+  .ig-stats{gap:1.2rem}
+  .cta-features{gap:1.2rem}
 }
 @media(max-width:480px){
   .hero-actions{flex-direction:column;align-items:flex-start}
   .btn-rose,.btn-ghost{width:100%;text-align:center}
   .why-grid{grid-template-columns:1fr 1fr}
-  .gallery-item{width:clamp(140px,60vw,200px)}
+  .ig-stats{flex-wrap:wrap;gap:.8rem}
+  .ig-stat{min-width:80px}
 }
-@media(prefers-reduced-motion:reduce){
-  *,*::before,*::after{animation:none!important;transition:none!important}
-}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
 </style>
 </head>
 <body>
@@ -278,129 +582,210 @@ footer{background:var(--ink);color:rgba(255,255,255,.65);padding:clamp(3rem,7vw,
 <div id="grain" aria-hidden="true"></div>
 <div id="prog"></div>
 
+<!-- ICON SPRITE -->
+<svg style="display:none" aria-hidden="true">
+<defs>
+  <symbol id="icon-bookmark" viewBox="0 0 24 24"><path d="M6 3h12v18l-6-4.5L6 21V3z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></symbol>
+  <symbol id="icon-flower" viewBox="0 0 24 24"><circle cx="12" cy="12" r="2.3" fill="none" stroke="currentColor" stroke-width="1.4"/><g fill="none" stroke="currentColor" stroke-width="1.4"><ellipse cx="12" cy="5.5" rx="2.5" ry="3.5"/><ellipse cx="12" cy="18.5" rx="2.5" ry="3.5"/><ellipse cx="5.5" cy="12" rx="3.5" ry="2.5"/><ellipse cx="18.5" cy="12" rx="3.5" ry="2.5"/></g></symbol>
+  <symbol id="icon-giftbox" viewBox="0 0 24 24"><rect x="3.5" y="9.5" width="17" height="10.5" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M3.5 9.5h17v3.5h-17z" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M12 9.5v10.5M12 9.5c-1.6 0-3-1.4-3-3a2 2 0 0 1 4 0c0-1.6 1.4-3 3-3" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></symbol>
+  <symbol id="icon-burst" viewBox="0 0 24 24"><path d="M12 2v4.2M12 17.8V22M2 12h4.2M17.8 12H22M4.8 4.8l3 3M16.2 16.2l3 3M19.2 4.8l-3 3M7.8 16.2l-3 3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" fill="none"/><circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="1.4"/></symbol>
+  <symbol id="icon-letter" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="1" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M3.5 6l8.5 7 8.5-7" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="icon-frame" viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" fill="none" stroke="currentColor" stroke-width="1.4"/><rect x="7" y="6" width="10" height="12" fill="none" stroke="currentColor" stroke-width="1.2"/></symbol>
+  <symbol id="icon-hanger" viewBox="0 0 24 24"><path d="M12 4a1.6 1.6 0 1 1-1.6 1.6" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/><path d="M12 6.5 3 13.5h18z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M5 13.5l-1.2 5.5h16.4L19 13.5" fill="none" stroke="currentColor" stroke-width="1.4"/></symbol>
+  <symbol id="icon-card" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="1" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M7 14h6M7 17h4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><path d="M16.2 8.7a2 2 0 1 0-2-2" fill="none" stroke="currentColor" stroke-width="1.2"/></symbol>
+  <symbol id="icon-bag" viewBox="0 0 24 24"><path d="M6 8h12l-1 12.5H7L6 8z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M9 8a3 3 0 0 1 6 0" fill="none" stroke="currentColor" stroke-width="1.5"/></symbol>
+  <symbol id="icon-seal" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M9 12.3l2 2 4-4.6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="icon-scissors" viewBox="0 0 24 24"><circle cx="6" cy="7" r="2" fill="none" stroke="currentColor" stroke-width="1.4"/><circle cx="6" cy="17" r="2" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M7.5 8.3L20 19M7.5 15.7L20 5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></symbol>
+  <symbol id="icon-heart-line" viewBox="0 0 24 24"><path d="M12 20s-7.5-4.6-9.5-9.3C1.2 7.6 3 4.8 6 4.8c2 0 3.5 1.3 4 2.6.5-1.3 2-2.6 4-2.6 3 0 4.8 2.8 3.5 5.9C19.5 15.4 12 20 12 20z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></symbol>
+  <symbol id="icon-arrow" viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+</defs>
+</svg>
+
+<!-- THREAD SCROLL INDICATOR -->
+<div id="rope-wrap" aria-hidden="true">
+  <svg id="rope-svg" preserveAspectRatio="none">
+    <path id="rope-path" d="M12,0 Q18,100 6,200 Q18,300 6,400 Q18,500 6,600 Q18,700 6,800 Q18,900 6,1000"/>
+  </svg>
+  <div id="rope-knot"></div>
+</div>
+
 <!-- LOADER -->
 <div id="loader">
-  <div class="ld-logo">Moments Remind</div>
+  <img src="images/logo.png">
   <div class="ld-bar"><div class="ld-fill"></div></div>
 </div>
+
+<!-- TOAST -->
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+<!-- CART OVERLAY + DRAWER -->
+<div id="cartOverlay" class="cart-overlay" onclick="closeCart()" aria-hidden="true"></div>
+<aside id="cartDrawer" class="cart-drawer" role="dialog" aria-modal="true" aria-label="Your cart" aria-hidden="true">
+  <div class="cart-head">
+    <div class="cart-title"><svg><use href="#icon-bag"/></svg> Your Cart<span class="cart-title-count" id="cartTitleCount" hidden></span></div>
+    <button class="cart-close" onclick="closeCart()" aria-label="Close cart">&times;</button>
+  </div>
+  <div class="cart-body" id="cartBody"></div>
+  <div class="cart-foot">
+    <div class="cart-subtotal"><span>Estimated subtotal</span><strong id="cartSubtotal">₹0</strong></div>
+    <p class="cart-disclaimer">Estimates only — the final price is confirmed on WhatsApp once we've discussed your customisation.</p>
+    <button class="btn-rose cart-checkout" id="cartCheckoutBtn" onclick="proceedToCheckout()" disabled>Proceed to Checkout</button>
+  </div>
+</aside>
 
 <!-- MOBILE MENU -->
 <div class="mobile-menu" id="mMenu">
   <button class="mobile-close" id="mClose">&#x2715;</button>
-  <a href="#collections" onclick="closeMenu()">Collections</a>
-  <a href="#gallery" onclick="closeMenu()">Gallery</a>
-  <a href="#process" onclick="closeMenu()">Our Craft</a>
-  <a href="#testimonials" onclick="closeMenu()">Reviews</a>
-  <a href="#cta-band" class="m-cta" onclick="closeMenu()">Custom Order</a>
+  <a href="#collections">Collections</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#process">Our Craft</a>
+  <a href="#testimonials">Reviews</a>
+  <a href="#contact">Contact Us</a>
+  <button type="button" class="m-cart-btn" onclick="event.preventDefault();closeMenu();openCart();"><svg viewBox="0 0 24 24"><use href="#icon-bag"/></svg> Cart (<span id="mCartCount">0</span>)</button>
+  <a href="#contact" class="m-cta" onclick="closeMenu();requestCustomOrderFlow()">Custom Order</a>
 </div>
 
 <!-- NAV -->
 <nav id="nav">
-  <a class="nav-logo" href="#">Moments Remind</a>
+  <a class="nav-logo" href="#"><span class="nav-logo-text">Mr Moments Remind</span></a>
   <ul class="nav-links">
-    <li><a href="#collections">Collections</a></li>
-    <li><a href="#gallery">Gallery</a></li>
-    <li><a href="#process">Our Craft</a></li>
-    <li><a href="#testimonials">Reviews</a></li>
-    <li><a href="#cta-band" class="nav-order">Custom Order</a></li>
+    <li><a href="#collections" class="nav-bm" data-section="collections">Collections</a></li>
+    <li><a href="#gallery" class="nav-bm" data-section="gallery">Gallery</a></li>
+    <li><a href="#process" class="nav-bm" data-section="process">Our Craft</a></li>
+    <li><a href="#testimonials" class="nav-bm" data-section="testimonials">Reviews</a></li>
+    <li><a href="#contact" class="nav-bm" data-section="contact">Contact</a></li>
+    <li><a href="#contact" class="nav-bm nav-order" onclick="requestCustomOrderFlow()">Custom Order</a></li>
   </ul>
-  <button class="hamburger" id="ham" aria-label="Open menu"><span></span><span></span><span></span></button>
+  <div class="nav-right">
+    <button class="nav-cart" id="cartBtn" onclick="openCart()" aria-label="Open cart">
+      <svg class="nav-cart-icon"><use href="#icon-bag"/></svg>
+      <span class="cart-count" id="cartCount" hidden>0</span>
+    </button>
+    <button class="hamburger" id="ham" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div>
 </nav>
 
 <!-- HERO -->
 <section id="hero">
-  <div class="hero-bg">
-    <div class="ribbon-h"></div>
+  <!-- <div class="ribbon-h"></div> -->
+
+  <!-- 3D floating particles (petals + gold dust) -->
+  <div class="hero-particles" aria-hidden="true">
+    <span class="hp" style="left:8%;width:9px;height:9px;background:radial-gradient(circle at 30% 30%,var(--gold-light),var(--gold));--drift:18px;animation-duration:9s;animation-delay:.2s"></span>
+    <span class="hp hp-petal" style="left:16%;width:14px;height:14px;background:linear-gradient(135deg,var(--rose),var(--blush));--drift:-26px;animation-duration:12s;animation-delay:2.4s"></span>
+    <span class="hp" style="left:27%;width:6px;height:6px;background:var(--gold-light);--drift:12px;animation-duration:7.5s;animation-delay:1.1s"></span>
+    <span class="hp hp-petal" style="left:41%;width:11px;height:11px;background:linear-gradient(135deg,var(--blush),var(--rose));--drift:20px;animation-duration:10.5s;animation-delay:3.6s"></span>
+    <span class="hp" style="left:58%;width:8px;height:8px;background:radial-gradient(circle at 30% 30%,var(--gold-light),var(--gold));--drift:-16px;animation-duration:8.5s;animation-delay:.8s"></span>
+    <span class="hp hp-petal" style="left:69%;width:13px;height:13px;background:linear-gradient(135deg,var(--rose),var(--blush));--drift:24px;animation-duration:11.5s;animation-delay:4.4s"></span>
+    <span class="hp" style="left:80%;width:7px;height:7px;background:var(--gold-light);--drift:-14px;animation-duration:9.5s;animation-delay:2s"></span>
+    <span class="hp hp-petal" style="left:90%;width:10px;height:10px;background:linear-gradient(135deg,var(--blush),var(--rose));--drift:-22px;animation-duration:13s;animation-delay:1.6s"></span>
+  </div>
+
+  <!-- Background decorative elements
+  <div class="hero-bg" aria-hidden="true">
     <div class="paper-sheet ps-1"></div>
     <div class="paper-sheet ps-2"></div>
-    <div id="floaties" aria-hidden="true">
-      <!-- Washi tapes -->
+    <div id="floaties">
       <div class="washi w1"></div>
-      <div class="washi w2"></div>
-      <div class="washi w3"></div>
-      <!-- Polaroids -->
-      <div class="pol sway" style="top:14%;right:22%;width:110px;--r:-7deg;animation-delay:.6s;--dur:6s;--del:.5s">
-        <div class="pol-inner" style="background:#fde8f0;font-size:2.2rem">🌸</div>
-        <div class="pol-caption">handmade with love</div>
+      <div class="washi w2" style="top:60%;left:16%;right:auto"></div>
+      <div class="fi sway" style="top:26%;left:46%;--r:8deg;animation-delay:1.3s;--dur:5s;--del:1s">
+        <svg width="26" height="60" viewBox="0 0 28 65"><path d="M2 0 h24 v55 l-12-10 -12 10 Z" fill="#c8556e" opacity=".8"/></svg>
       </div>
-      <div class="pol sway" style="top:38%;right:8%;width:95px;--r:5deg;animation-delay:.9s;--dur:7s;--del:1s">
-        <div class="pol-inner" style="background:#e8f0e0;font-size:2rem">🎁</div>
-        <div class="pol-caption">for you</div>
+      <div class="fi sway" style="top:62%;left:10%;--r:12deg;animation-delay:2s;--dur:4.5s;--del:1.5s;font-size:16px;color:var(--gold)">✦</div>
+    </div>
+  </div> -->
+
+  <!-- TWO-COLUMN HERO GRID: Text Left | Framed Photo Right -->
+  <div class="hero-grid">
+
+    <!-- LEFT: Text content -->
+    <div class="hero-inner">
+      <div class="hero-eyebrow">Handcrafted in India — Est. 2021</div>
+      <h1 class="hero-h1">
+        Gifts that hold<br>
+        <em>memories</em> close,<br>
+        <span class="gold">forever.</span>
+      </h1>
+      <p class="hero-p">Transform your memories into handcrafted keepsakes you'll cherish forever.</p>
+      <div class="hero-actions">
+        <a href="#collections" class="btn-rose">Shop Collections</a>
+        <a href="#contact" class="btn-ghost" onclick="requestCustomOrderFlow()">Order Custom Gift</a>
       </div>
-      <div class="pol sway" style="bottom:20%;right:28%;width:88px;--r:-4deg;animation-delay:1.1s;--dur:5.5s;--del:2s">
-        <div class="pol-inner" style="background:#fef6e0;font-size:1.8rem">📷</div>
-        <div class="pol-caption">memories</div>
+      <div class="hero-stats">
+        <div><div class="stat-val" data-count="1200">0</div><div class="stat-label">Happy customers</div></div>
+        <div><div class="stat-val" data-count="48">0</div><div class="stat-label">Hrs per piece</div></div>
+        <div><div class="stat-val" data-count="100">0</div><div class="stat-label">% handmade</div></div>
       </div>
-      <!-- Bow SVG -->
-      <div class="bow sway" style="top:20%;right:6%;--r:0deg;animation-delay:1.4s;--dur:5s;--del:.8s">
-        <svg width="70" height="55" viewBox="0 0 70 55" fill="none">
-          <ellipse cx="20" cy="22" rx="16" ry="10" stroke="#c8556e" stroke-width="2" fill="#f2c8d0" opacity=".8" transform="rotate(-20 20 22)"/>
-          <ellipse cx="50" cy="22" rx="16" ry="10" stroke="#c8556e" stroke-width="2" fill="#f2c8d0" opacity=".8" transform="rotate(20 50 22)"/>
-          <ellipse cx="35" cy="22" rx="6" ry="6" fill="#c8556e" opacity=".9"/>
-          <line x1="35" y1="28" x2="25" y2="50" stroke="#c8556e" stroke-width="1.5" opacity=".6"/>
-          <line x1="35" y1="28" x2="45" y2="50" stroke="#c8556e" stroke-width="1.5" opacity=".6"/>
+    </div>
+
+    <!-- RIGHT: Framed bouquet photo -->
+    <div class="hero-visual">
+      <div class="hero-frame">
+        <!-- Floating chip top-right -->
+        <div class="hero-frame-chip">
+          <i class="fa-solid fa-star" style="font-size:.6rem"></i> Handmade
+        </div>
+
+        <!-- The photo with decorative frame -->
+        <div class="hero-frame-photo">
+          <img
+            src="images/bouquet.png"
+            alt="Fresh hand-tied flower bouquet, handmade by Moments Remind"
+            loading="eager"
+            onerror="this.onerror=null;this.src='images/bouquet-box.png';"
+          >
+          <!-- Inner border overlay -->
+          <div class="hero-frame-border"></div>
+          <!-- 4 corner gold ornaments -->
+          <div class="hero-frame-corner tl"></div>
+          <div class="hero-frame-corner tr"></div>
+          <div class="hero-frame-corner bl"></div>
+          <div class="hero-frame-corner br"></div>
+          <!-- Caption ribbon -->
+          <div class="hero-frame-caption">handmade &amp; tied with love</div>
+        </div>
+
+        <!-- Floating tag bottom-left -->
+        <div class="hero-frame-tag">
+          <div class="hero-frame-tag-dot"><i class="fa-solid fa-heart"></i></div>
+          <div class="hero-frame-tag-text">
+            <strong>100% Handmade</strong>
+            Fresh & made to order
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /hero-grid -->
+
+  <button id="plane-hint" onclick="document.getElementById('collections').scrollIntoView({behavior:'smooth'})">
+    <span>scroll down</span>
+    <div style="position:relative">
+      <div class="plane-trail">
+        <div class="trail-dot"></div><div class="trail-dot"></div>
+        <div class="trail-dot"></div><div class="trail-dot"></div>
+      </div>
+      <div class="plane-anim">
+        <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+          <path d="M32 4L4 16l10 4 4 12 4-8 10-20z" fill="var(--rose)" opacity=".9"/>
+          <path d="M14 20l6-4" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/>
         </svg>
       </div>
-      <!-- Floating hearts -->
-      <div class="fi sway" style="top:45%;left:6%;--r:15deg;animation-delay:1.6s;--dur:4.5s;--del:1.5s;font-size:20px">♥</div>
-      <div class="fi sway" style="top:60%;left:14%;--r:-10deg;animation-delay:2s;--dur:6s;--del:2s;font-size:14px;color:var(--gold)">✦</div>
-      <div class="fi sway" style="top:25%;left:22%;--r:5deg;animation-delay:1.8s;--dur:5.5s;--del:1s;font-size:18px;color:var(--rose);opacity:.4">❧</div>
     </div>
-  </div>
-
-  <div class="hero-inner">
-    <div class="hero-eyebrow">Handcrafted in India — Est. 2021</div>
-    <h1 class="hero-h1">
-      Gifts that hold<br>
-      <em>memories</em> close,<br>
-      <span class="gold">forever.</span>
-    </h1>
-    <p class="hero-p">We handcraft personalized bookmarks, photo frames, explosion boxes, and memory albums — each one made with patience, pressed flowers, and a piece of our heart.</p>
-    <div class="hero-actions">
-      <a href="#collections" class="btn-rose">Shop Collections</a>
-      <a href="#cta-band" class="btn-ghost">Order Custom Gift</a>
-    </div>
-    <div class="hero-stats">
-      <div>
-        <div class="stat-val" data-count="1200">0</div>
-        <div class="stat-label">Happy customers</div>
-      </div>
-      <div>
-        <div class="stat-val" data-count="48">0</div>
-        <div class="stat-label">Hours per piece</div>
-      </div>
-      <div>
-        <div class="stat-val" data-count="100">0</div>
-        <div class="stat-label">% handmade</div>
-      </div>
-    </div>
-  </div>
-
-  <div class="scroll-arrow" aria-hidden="true">
-    <span>scroll</span>
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" stroke-width="1.5"><polyline points="6 9 12 15 18 9"/></svg>
-  </div>
+  </button>
 </section>
 
 <!-- MARQUEE -->
 <div class="marquee-band" aria-hidden="true">
   <div class="marquee-track">
-    <span class="marquee-item">Handmade Bookmarks</span>
-    <span class="marquee-item">Explosion Boxes</span>
-    <span class="marquee-item">Photo Frames</span>
-    <span class="marquee-item">Memory Albums</span>
-    <span class="marquee-item">Scrapbooks</span>
-    <span class="marquee-item">Love Letters</span>
-    <span class="marquee-item">Birthday Gifts</span>
-    <span class="marquee-item">Custom Keepsakes</span>
-    <span class="marquee-item">Handmade Bookmarks</span>
-    <span class="marquee-item">Explosion Boxes</span>
-    <span class="marquee-item">Photo Frames</span>
-    <span class="marquee-item">Memory Albums</span>
-    <span class="marquee-item">Scrapbooks</span>
-    <span class="marquee-item">Love Letters</span>
-    <span class="marquee-item">Birthday Gifts</span>
-    <span class="marquee-item">Custom Keepsakes</span>
+    <span class="marquee-item">Handmade Bookmarks</span><span class="marquee-item">Explosion Boxes</span>
+    <span class="marquee-item">Photo Frames</span><span class="marquee-item">Flower Bouquets</span>
+    <span class="marquee-item">Handwritten Letters</span><span class="marquee-item">Wall Hangers</span>
+    <span class="marquee-item">Greeting Cards</span><span class="marquee-item">Custom Keepsakes</span>
+    <span class="marquee-item">Handmade Bookmarks</span><span class="marquee-item">Explosion Boxes</span>
+    <span class="marquee-item">Photo Frames</span><span class="marquee-item">Flower Bouquets</span>
+    <span class="marquee-item">Handwritten Letters</span><span class="marquee-item">Wall Hangers</span>
+    <span class="marquee-item">Greeting Cards</span><span class="marquee-item">Custom Keepsakes</span>
   </div>
 </div>
 
@@ -409,146 +794,283 @@ footer{background:var(--ink);color:rgba(255,255,255,.65);padding:clamp(3rem,7vw,
   <div class="section-header reveal">
     <div class="eyebrow">Handcrafted with heart</div>
     <h2 class="section-title">Our Collections</h2>
-    <p class="section-sub">Every piece begins with a memory you want to keep.</p>
+    <p class="section-sub">Every piece begins with a memory you want to keep. Add what you love to your cart — we'll confirm every detail on WhatsApp.</p>
   </div>
+
   <div class="prod-grid">
-    <div class="prod-card reveal">
-      <div class="prod-img">
-        <div class="prod-img-bg" style="background:linear-gradient(135deg,#fde8f0,#f2c8d4,#e8a8c0);font-size:5rem">🎁</div>
-        <div class="prod-overlay"></div>
-        <div class="badge">New<br>2024</div>
-        <div class="prod-hover-label">Explore Explosion Boxes</div>
-      </div>
-      <div class="prod-info">
-        <div class="prod-tag">Bestseller</div>
-        <div class="prod-name">Explosion Memory Boxes</div>
-        <div class="prod-price">Starting ₹799 — Fully Customised</div>
-      </div>
-    </div>
-    <div class="prod-card reveal">
-      <div class="prod-img">
-        <div class="prod-img-bg" style="background:linear-gradient(135deg,#fef0e0,#fce4b8)">🔖</div>
-        <div class="prod-overlay"></div>
-        <div class="prod-hover-label">Shop Bookmarks</div>
+
+    <!-- 1. BOOKMARKS -->
+    <article class="prod-card reveal" data-key="bookmarks">
+      <div class="prod-photo">
+        <img src="https://images.unsplash.com/photo-1748803798865-9620d9bdd630?auto=format&fit=crop&q=80&w=900" alt="Pressed-flower bookmark, design 1" loading="lazy" onerror="this.onerror=null;this.closest('.prod-photo').classList.add('no-photo')">
+        <div class="photo-fallback"><svg class="fb-icon"><use href="#icon-bookmark"/></svg><span>Photo coming soon</span></div>
       </div>
       <div class="prod-info">
         <div class="prod-tag">Loved by Readers</div>
-        <div class="prod-name">Handmade Bookmarks</div>
-        <div class="prod-price">From ₹149 each</div>
+        <h3 class="prod-name">Pressed-Flower Bookmarks</h3>
+        <p class="prod-subtitle">Real pressed petals, sealed under crystal-clear resin.</p>
+        <div class="variant-chips" role="group" aria-label="Choose a design">
+          <button type="button" class="variant-chip active" onclick="selectVariant(this,'https://images.unsplash.com/photo-1748803798865-9620d9bdd630?auto=format&fit=crop&q=80&w=900')">No.1</button>
+          <button type="button" class="variant-chip" onclick="selectVariant(this,'https://images.unsplash.com/photo-1643403224492-961e7621c7d6?auto=format&fit=crop&q=80&w=900')">No.2</button>
+          <button type="button" class="variant-chip" onclick="selectVariant(this,'https://images.unsplash.com/photo-1748803798865-9620d9bdd630?auto=format&fit=crop&q=80&w=900')">No.3</button>
+          <button type="button" class="variant-chip" onclick="selectVariant(this,'https://images.unsplash.com/photo-1643403224492-961e7621c7d6?auto=format&fit=crop&q=80&w=900')">No.4</button>
+        </div>
+        <div class="prod-controls">
+          <div class="qty-stepper">
+            <button type="button" onclick="stepQty(this,-1)" aria-label="Decrease quantity">−</button>
+            <input class="qty-input" type="number" value="1" min="1" max="20" readonly>
+            <button type="button" onclick="stepQty(this,1)" aria-label="Increase quantity">+</button>
+          </div>
+          <div class="prod-price">₹<span class="lp-val">149</span></div>
+        </div>
+        <details class="note-toggle">
+          <summary>+ Add a personalisation note</summary>
+          <textarea class="note-input" placeholder="e.g. a name for the ribbon, a date, a favourite line…"></textarea>
+        </details>
+        <button class="btn-add-cart" onclick="addToCart('bookmarks',this)"><svg class="ac-icon"><use href="#icon-seal"/></svg> Add to Cart</button>
       </div>
-    </div>
-    <div class="prod-card reveal">
-      <div class="prod-img">
-        <div class="prod-img-bg" style="background:linear-gradient(135deg,#e8f0e0,#c8d8c0)">🖼️</div>
-        <div class="prod-overlay"></div>
-        <div class="prod-hover-label">View Photo Frames</div>
+    </article>
+
+    <!-- 2. BOUQUET -->
+    <article class="prod-card reveal" data-key="bouquet">
+      <div class="prod-photo">
+        <img src="images/bouquet.png" alt="Fresh hand-tied flower bouquet" loading="lazy" onerror="this.onerror=null;this.closest('.prod-photo').classList.add('no-photo')">
+        <div class="photo-fallback"><svg class="fb-icon"><use href="#icon-flower"/></svg><span>Photo coming soon</span></div>
       </div>
       <div class="prod-info">
-        <div class="prod-tag">Personalised</div>
-        <div class="prod-name">Decorated Photo Frames</div>
-        <div class="prod-price">From ₹499</div>
+        <div class="prod-tag">Hand-Tied Fresh</div>
+        <h3 class="prod-name">Fresh Flower Bouquet</h3>
+        <p class="prod-subtitle">Seasonal blooms, wrapped the morning they're delivered.</p>
+        <div class="prod-controls">
+          <div class="qty-stepper">
+            <button type="button" onclick="stepQty(this,-1)" aria-label="Decrease quantity">−</button>
+            <input class="qty-input" type="number" value="1" min="1" max="20" readonly>
+            <button type="button" onclick="stepQty(this,1)" aria-label="Increase quantity">+</button>
+          </div>
+          <div class="prod-price">From ₹<span class="lp-val">599</span></div>
+        </div>
+        <details class="note-toggle">
+          <summary>+ Add a personalisation note</summary>
+          <textarea class="note-input" placeholder="e.g. favourite colours or flowers, who it's for…"></textarea>
+        </details>
+        <button class="btn-add-cart" onclick="addToCart('bouquet',this)"><svg class="ac-icon"><use href="#icon-seal"/></svg> Add to Cart</button>
       </div>
-    </div>
-    <div class="prod-card reveal">
-      <div class="prod-img">
-        <div class="prod-img-bg" style="background:linear-gradient(135deg,#e8e8f8,#d0c8f0)">📖</div>
-        <div class="prod-overlay"></div>
-        <div class="prod-hover-label">See Memory Albums</div>
+    </article>
+
+    <!-- 3. BOUQUET + GIFT BOX COMBO -->
+    <article class="prod-card reveal" data-key="combo">
+      <div class="prod-photo">
+        <img src="images/bouquet-box.png" alt="Flower bouquet paired with a handmade gift box" loading="lazy" onerror="this.onerror=null;this.closest('.prod-photo').classList.add('no-photo')">
+        <div class="photo-fallback"><svg class="fb-icon"><use href="#icon-giftbox"/></svg><span>Photo coming soon</span></div>
+        <div class="badge">Most<br>Gifted</div>
       </div>
       <div class="prod-info">
-        <div class="prod-tag">Heirloom Quality</div>
-        <div class="prod-name">Memory Albums & Scrapbooks</div>
-        <div class="prod-price">From ₹999</div>
+        <div class="prod-tag">Most Gifted</div>
+        <h3 class="prod-name">Bouquet + Gift Box Combo</h3>
+        <p class="prod-subtitle">Our bouquet, paired with a hand-folded keepsake box.</p>
+        <div class="prod-controls">
+          <div class="qty-stepper">
+            <button type="button" onclick="stepQty(this,-1)" aria-label="Decrease quantity">−</button>
+            <input class="qty-input" type="number" value="1" min="1" max="20" readonly>
+            <button type="button" onclick="stepQty(this,1)" aria-label="Increase quantity">+</button>
+          </div>
+          <div class="prod-price">From ₹<span class="lp-val">1,299</span></div>
+        </div>
+        <div class="prod-note">*final price may vary with customisation</div>
+        <details class="note-toggle">
+          <summary>+ Add a personalisation note</summary>
+          <textarea class="note-input" placeholder="e.g. occasion, names, what should go inside the box…"></textarea>
+        </details>
+        <button class="btn-add-cart" onclick="addToCart('combo',this)"><svg class="ac-icon"><use href="#icon-seal"/></svg> Add to Cart</button>
       </div>
-    </div>
+    </article>
+
+    <!-- 4. EXPLOSION BOX -->
+    <article class="prod-card reveal" data-key="explosion">
+      <div class="prod-photo">
+        <img src="images/open-box.png" alt="Tiered paper explosion box, opens like a layered cake" loading="lazy" onerror="this.onerror=null;this.closest('.prod-photo').classList.add('no-photo')">
+        <div class="photo-fallback"><svg class="fb-icon"><use href="#icon-burst"/></svg><span>Photo coming soon</span></div>
+        <div class="badge">Best<br>Seller</div>
+      </div>
+      <div class="prod-info">
+        <div class="prod-tag">Bestseller</div>
+        <h3 class="prod-name">Surprise Explosion Box</h3>
+        <p class="prod-subtitle">Layers of photos, notes & tiny surprises that unfold like a cake.</p>
+        <div class="prod-controls">
+          <div class="qty-stepper">
+            <button type="button" onclick="stepQty(this,-1)" aria-label="Decrease quantity">−</button>
+            <input class="qty-input" type="number" value="1" min="1" max="20" readonly>
+            <button type="button" onclick="stepQty(this,1)" aria-label="Increase quantity">+</button>
+          </div>
+          <div class="prod-price">From ₹<span class="lp-val">799</span></div>
+        </div>
+        <div class="prod-note">*fully customised — final price confirmed on WhatsApp</div>
+        <details class="note-toggle">
+          <summary>+ Add a personalisation note</summary>
+          <textarea class="note-input" placeholder="Tell us about them — names, memories, the occasion…"></textarea>
+        </details>
+        <button class="btn-add-cart" onclick="addToCart('explosion',this)"><svg class="ac-icon"><use href="#icon-seal"/></svg> Add to Cart</button>
+      </div>
+    </article>
+
+    <!-- 5. LETTERS -->
+    <article class="prod-card reveal" data-key="letters">
+      <div class="prod-photo">
+        <img src="https://images.unsplash.com/photo-1529251333259-d36cccaf22ea?auto=format&fit=crop&q=80&w=900" alt="Handwritten love letter" loading="lazy" onerror="this.onerror=null;this.closest('.prod-photo').classList.add('no-photo')">
+        <div class="photo-fallback"><svg class="fb-icon"><use href="#icon-letter"/></svg><span>Photo coming soon</span></div>
+      </div>
+      <div class="prod-info">
+        <div class="prod-tag">Pen & Paper</div>
+        <h3 class="prod-name">Handwritten Letters</h3>
+        <p class="prod-subtitle">A real letter, written by hand, in the mood you choose.</p>
+        <div class="variant-chips" role="group" aria-label="Choose a letter style">
+          <button type="button" class="variant-chip active" onclick="selectVariant(this,'https://images.unsplash.com/photo-1529251333259-d36cccaf22ea?auto=format&fit=crop&q=80&w=900')">Love</button>
+          <button type="button" class="variant-chip" onclick="selectVariant(this,'https://images.unsplash.com/photo-1769791367981-8ca8e0d400a8?auto=format&fit=crop&q=80&w=900')">Vintage</button>
+          <button type="button" class="variant-chip" onclick="selectVariant(this,'https://images.unsplash.com/photo-1529066496421-d8fb2dca38a6?auto=format&fit=crop&q=80&w=900')">Birthday</button>
+        </div>
+        <div class="prod-controls">
+          <div class="qty-stepper">
+            <button type="button" onclick="stepQty(this,-1)" aria-label="Decrease quantity">−</button>
+            <input class="qty-input" type="number" value="1" min="1" max="20" readonly>
+            <button type="button" onclick="stepQty(this,1)" aria-label="Increase quantity">+</button>
+          </div>
+          <div class="prod-price">₹<span class="lp-val">249</span></div>
+        </div>
+        <details class="note-toggle">
+          <summary>+ Add a personalisation note</summary>
+          <textarea class="note-input" placeholder="e.g. who it's for, a memory or inside joke to weave in…"></textarea>
+        </details>
+        <button class="btn-add-cart" onclick="addToCart('letters',this)"><svg class="ac-icon"><use href="#icon-seal"/></svg> Add to Cart</button>
+      </div>
+    </article>
+
+    <!-- 6. FRAMES -->
+    <article class="prod-card reveal" data-key="frames">
+      <div class="prod-photo">
+        <img src="https://images.unsplash.com/photo-1582053628662-c65b0e0544e9?auto=format&fit=crop&q=80&w=900" alt="Personalised photo frame, love edition" loading="lazy" onerror="this.onerror=null;this.closest('.prod-photo').classList.add('no-photo')">
+        <div class="photo-fallback"><svg class="fb-icon"><use href="#icon-frame"/></svg><span>Photo coming soon</span></div>
+      </div>
+      <div class="prod-info">
+        <div class="prod-tag">For the Shelf</div>
+        <h3 class="prod-name">Personalised Photo Frames</h3>
+        <p class="prod-subtitle">Decorated by hand around the photo that matters.</p>
+        <div class="variant-chips" role="group" aria-label="Choose a frame style">
+          <button type="button" class="variant-chip active" onclick="selectVariant(this,'https://images.unsplash.com/photo-1582053628662-c65b0e0544e9?auto=format&fit=crop&q=80&w=900')">Love</button>
+          <button type="button" class="variant-chip" onclick="selectVariant(this,'https://images.unsplash.com/photo-1626846116799-ad61f874f99d?auto=format&fit=crop&q=80&w=900')">Friends</button>
+        </div>
+        <div class="prod-controls">
+          <div class="qty-stepper">
+            <button type="button" onclick="stepQty(this,-1)" aria-label="Decrease quantity">−</button>
+            <input class="qty-input" type="number" value="1" min="1" max="20" readonly>
+            <button type="button" onclick="stepQty(this,1)" aria-label="Increase quantity">+</button>
+          </div>
+          <div class="prod-price">From ₹<span class="lp-val">499</span></div>
+        </div>
+        <details class="note-toggle">
+          <summary>+ Add a personalisation note</summary>
+          <textarea class="note-input" placeholder="e.g. names, a date, your favourite colours…"></textarea>
+        </details>
+        <button class="btn-add-cart" onclick="addToCart('frames',this)"><svg class="ac-icon"><use href="#icon-seal"/></svg> Add to Cart</button>
+      </div>
+    </article>
+
+    <!-- 7. WALL HANGER -->
+    <article class="prod-card reveal" data-key="hanger">
+      <div class="prod-photo">
+        <img src="https://images.unsplash.com/photo-1633594308237-3dcfa56b4e69?auto=format&fit=crop&q=80&w=900" alt="Father's Day handmade wall hanger" loading="lazy" onerror="this.onerror=null;this.closest('.prod-photo').classList.add('no-photo')">
+        <div class="photo-fallback"><svg class="fb-icon"><use href="#icon-hanger"/></svg><span>Photo coming soon</span></div>
+      </div>
+      <div class="prod-info">
+        <div class="prod-tag">Seasonal</div>
+        <h3 class="prod-name">Father's Day Wall Hanger</h3>
+        <p class="prod-subtitle">A handmade hanging tribute for the one who taught you everything.</p>
+        <div class="prod-controls">
+          <div class="qty-stepper">
+            <button type="button" onclick="stepQty(this,-1)" aria-label="Decrease quantity">−</button>
+            <input class="qty-input" type="number" value="1" min="1" max="20" readonly>
+            <button type="button" onclick="stepQty(this,1)" aria-label="Increase quantity">+</button>
+          </div>
+          <div class="prod-price">From ₹<span class="lp-val">699</span></div>
+        </div>
+        <div class="prod-note">*final price may vary with customisation</div>
+        <details class="note-toggle">
+          <summary>+ Add a personalisation note</summary>
+          <textarea class="note-input" placeholder="e.g. his name, a quote, what he loves…"></textarea>
+        </details>
+        <button class="btn-add-cart" onclick="addToCart('hanger',this)"><svg class="ac-icon"><use href="#icon-seal"/></svg> Add to Cart</button>
+      </div>
+    </article>
+
+    <!-- 8. CARD -->
+    <article class="prod-card reveal" data-key="card">
+      <div class="prod-photo">
+        <img src="https://images.unsplash.com/photo-1680183718072-e9b55b649698?auto=format&fit=crop&q=80&w=900" alt="Handmade greeting card" loading="lazy" onerror="this.onerror=null;this.closest('.prod-photo').classList.add('no-photo')">
+        <div class="photo-fallback"><svg class="fb-icon"><use href="#icon-card"/></svg><span>Photo coming soon</span></div>
+      </div>
+      <div class="prod-info">
+        <div class="prod-tag">Little & Lovely</div>
+        <h3 class="prod-name">Greeting Card</h3>
+        <p class="prod-subtitle">A small card that says a big thing.</p>
+        <div class="prod-controls">
+          <div class="qty-stepper">
+            <button type="button" onclick="stepQty(this,-1)" aria-label="Decrease quantity">−</button>
+            <input class="qty-input" type="number" value="1" min="1" max="20" readonly>
+            <button type="button" onclick="stepQty(this,1)" aria-label="Increase quantity">+</button>
+          </div>
+          <div class="prod-price">₹<span class="lp-val">99</span></div>
+        </div>
+        <details class="note-toggle">
+          <summary>+ Add a personalisation note</summary>
+          <textarea class="note-input" placeholder="e.g. occasion, what you'd like it to say…"></textarea>
+        </details>
+        <button class="btn-add-cart" onclick="addToCart('card',this)"><svg class="ac-icon"><use href="#icon-seal"/></svg> Add to Cart</button>
+      </div>
+    </article>
+
   </div>
 </section>
 
-<!-- GALLERY -->
+<!-- INSTAGRAM SHOWCASE -->
 <section id="gallery">
   <div class="section-header reveal">
     <div class="eyebrow">Real pieces, real love</div>
-    <h2 class="section-title">Memory Gallery</h2>
-    <p class="section-sub">A glimpse of what we've made — and what we can make for you.</p>
+    <h2 class="section-title">From Our Instagram</h2>
+    <p class="section-sub">Every square is a gift that found its person. Come see the rest @momentsremind.</p>
   </div>
-  <div class="gallery-strip">
-    <div class="gallery-item" style="background:linear-gradient(145deg,#fde8f0,#f2c8d4)">
-      <div class="gallery-item-inner" style="font-size:4rem">🌸</div>
-      <div class="gallery-label">Floral Bookmark Set</div>
-    </div>
-    <div class="gallery-item" style="background:linear-gradient(145deg,#fef6e0,#fce4b8)">
-      <div class="gallery-item-inner" style="font-size:4rem">🎁</div>
-      <div class="gallery-label">Anniversary Box</div>
-    </div>
-    <div class="gallery-item" style="background:linear-gradient(145deg,#e8f0e0,#c8d8c0)">
-      <div class="gallery-item-inner" style="font-size:4rem">🖼️</div>
-      <div class="gallery-label">Wedding Frame</div>
-    </div>
-    <div class="gallery-item" style="background:linear-gradient(145deg,#f0e8f8,#d8c8f0)">
-      <div class="gallery-item-inner" style="font-size:4rem">📷</div>
-      <div class="gallery-label">Memory Collage</div>
-    </div>
-    <div class="gallery-item" style="background:linear-gradient(145deg,#fde8e8,#f0c0c8)">
-      <div class="gallery-item-inner" style="font-size:4rem">💌</div>
-      <div class="gallery-label">Love Letter Kit</div>
-    </div>
-    <div class="gallery-item" style="background:linear-gradient(145deg,#e0eef8,#b8d8f0)">
-      <div class="gallery-item-inner" style="font-size:4rem">📖</div>
-      <div class="gallery-label">Grandma's Scrapbook</div>
-    </div>
-    <div class="gallery-item" style="background:linear-gradient(145deg,#f8f0e0,#edd8a0)">
-      <div class="gallery-item-inner" style="font-size:4rem">✨</div>
-      <div class="gallery-label">Birthday Surprise Box</div>
-    </div>
+  <div class="ig-wrap reveal">
+    <a class="ig-frame" href="https://www.instagram.com/mr_momentsremind/" target="_blank" rel="noopener" aria-label="View Moments Remind on Instagram">
+      <img src="images/insta.png" alt="Moments Remind Instagram gallery — handcrafted gifts and keepsakes">
+      <span class="ig-overlay">
+        <span class="ig-badge"><i class="fa-brands fa-instagram"></i> Open on Instagram</span>
+      </span>
+    </a>
+  </div>
+  <div class="ig-meta reveal">
+    <span class="ig-handle">@momentsremind</span>
+  </div>
+  <div class="ig-stats reveal">
+    <div class="ig-stat"><strong>1,200+</strong><span>Happy Customers</span></div>
+    <div class="ig-stat"><strong>500+</strong><span>Posts Shared</span></div>
+    <div class="ig-stat"><strong><i class="fa-solid fa-star" style="font-size:.85em;color:var(--gold-light)"></i> 5.0</strong><span>Avg. Rating</span></div>
   </div>
 </section>
 
-<!-- CRAFT PROCESS -->
+<!-- PROCESS -->
 <section id="process">
   <div class="process-inner">
     <div class="process-left reveal">
       <div class="eyebrow">The making of a memory</div>
       <h2 class="section-title" style="text-align:left">How each gift<br>comes alive</h2>
       <div class="process-steps">
-        <div class="step">
-          <div class="step-num">1</div>
-          <div class="step-text">
-            <div class="step-title">You share the story</div>
-            <div class="step-desc">Tell us about the person, the occasion, and the memories that matter. The more you share, the more personal we can make it.</div>
-          </div>
-        </div>
-        <div class="step">
-          <div class="step-num">2</div>
-          <div class="step-text">
-            <div class="step-title">We design & handcraft</div>
-            <div class="step-desc">Every cut, fold, and stitch is done by hand. We choose papers, colours, and materials that feel like <em>them</em>.</div>
-          </div>
-        </div>
-        <div class="step">
-          <div class="step-num">3</div>
-          <div class="step-text">
-            <div class="step-title">Wrapped & delivered with love</div>
-            <div class="step-desc">Your gift arrives beautifully wrapped, ready to become someone's most treasured possession.</div>
-          </div>
-        </div>
+        <div class="step"><div class="step-num">1</div><div class="step-text"><div class="step-title">You share the story</div><div class="step-desc">Tell us about the person, the occasion, and the memories that matter. The more you share, the more personal we make it.</div></div></div>
+        <div class="step"><div class="step-num">2</div><div class="step-text"><div class="step-title">We design & handcraft</div><div class="step-desc">Every cut, fold, and stitch is done by hand. We choose papers, colours, and materials that feel like <em>them</em>.</div></div></div>
+        <div class="step"><div class="step-num">3</div><div class="step-text"><div class="step-title">Wrapped & delivered with love</div><div class="step-desc">Your gift arrives beautifully wrapped, ready to become someone's most treasured possession.</div></div></div>
       </div>
     </div>
     <div class="process-right reveal">
-      <div class="craft-card">
-        <div class="craft-icon">✂️</div>
-        <div class="craft-title">Premium handmade paper & materials</div>
-        <div class="craft-desc">We source textured papers, pressed florals, washi tapes, and ribbons from across India to give each piece its unique texture.</div>
-      </div>
-      <div class="craft-card">
-        <div class="craft-icon">🎨</div>
-        <div class="craft-title">Personalised to the last detail</div>
-        <div class="craft-desc">Names, photos, favourite quotes, inside jokes — everything can go in. No two gifts we make are ever the same.</div>
-      </div>
-      <div class="craft-card">
-        <div class="craft-icon">📦</div>
-        <div class="craft-title">Gift-ready packaging, always</div>
-        <div class="craft-desc">Every order ships in a gift box, tissue-wrapped, with a handwritten note from our team. Opening it is part of the experience.</div>
-      </div>
+      <div class="craft-card"><div class="craft-icon"><i class="fa-solid fa-scissors" style="color:var(--rose)"></i></div><div class="craft-title">Premium handmade paper & materials</div><div class="craft-desc">We source textured papers, pressed florals, washi tapes, and ribbons from across India.</div></div>
+      <div class="craft-card"><div class="craft-icon"><i class="fa-solid fa-palette" style="color:var(--rose)"></i></div><div class="craft-title">Personalised to the last detail</div><div class="craft-desc">Names, photos, favourite quotes, inside jokes — everything can go in. No two gifts we make are ever the same.</div></div>
+      <div class="craft-card"><div class="craft-icon"><i class="fa-solid fa-box-open" style="color:var(--rose)"></i></div><div class="craft-title">Gift-ready packaging, always</div><div class="craft-desc">Every order ships in a gift box, tissue-wrapped, with a handwritten note from our team.</div></div>
     </div>
   </div>
 </section>
@@ -564,36 +1086,171 @@ footer{background:var(--ink);color:rgba(255,255,255,.65);padding:clamp(3rem,7vw,
       <div class="stars">★★★★★</div>
       <div class="quote-mark">"</div>
       <p class="testi-text">She cried the moment she opened it. I've never seen a gift mean so much. The explosion box was better than anything I could have imagined.</p>
-      <div class="testi-person">
-        <div class="testi-avatar" style="background:#fde8f0">🌸</div>
-        <div>
-          <div class="testi-name">Priya S.</div>
-          <div class="testi-detail">Chennai · Anniversary gift</div>
-        </div>
-      </div>
+      <div class="testi-person"><div class="testi-avatar" style="background:#fde8f0">PS</div><div><div class="testi-name">Priya S.</div><div class="testi-detail">Chennai · Anniversary gift</div></div></div>
     </div>
     <div class="testi-card reveal">
       <div class="stars">★★★★★</div>
       <div class="quote-mark">"</div>
       <p class="testi-text">My mom keeps the photo frame on her shelf. She calls it her most treasured possession. Worth every rupee and more.</p>
-      <div class="testi-person">
-        <div class="testi-avatar" style="background:#e8f0e0">🌿</div>
-        <div>
-          <div class="testi-name">Ananya K.</div>
-          <div class="testi-detail">Bangalore · Mother's Day gift</div>
-        </div>
-      </div>
+      <div class="testi-person"><div class="testi-avatar" style="background:#e8f0e0">AK</div><div><div class="testi-name">Ananya K.</div><div class="testi-detail">Bangalore · Mother's Day gift</div></div></div>
     </div>
     <div class="testi-card reveal">
       <div class="stars">★★★★★</div>
       <div class="quote-mark">"</div>
       <p class="testi-text">The quality and care put into these bookmarks is unlike anything I've seen. Pure artistry. I've ordered three times now and every time I'm blown away.</p>
-      <div class="testi-person">
-        <div class="testi-avatar" style="background:#fef0e0">☀️</div>
-        <div>
-          <div class="testi-name">Rahul M.</div>
-          <div class="testi-detail">Mumbai · Repeat customer</div>
+      <div class="testi-person"><div class="testi-avatar" style="background:#fef0e0">RM</div><div><div class="testi-name">Rahul M.</div><div class="testi-detail">Mumbai · Repeat customer</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section id="why">
+  <div class="section-header reveal">
+    <div class="eyebrow">The difference you can feel</div>
+    <h2 class="section-title">Why Handmade?</h2>
+    <p class="section-sub">Because the best gifts carry a heartbeat.</p>
+  </div>
+  <div class="why-grid">
+    <div class="why-item reveal"><div class="why-icon"><svg><use href="#icon-scissors"/></svg></div><div class="why-title">Made by Hand</div><div class="why-desc">Every cut, fold, and stitch done by loving human hands — never a machine.</div></div>
+    <div class="why-item reveal"><div class="why-icon"><svg><use href="#icon-heart-line"/></svg></div><div class="why-title">Deeply Personal</div><div class="why-desc">We pour meaning into every detail, tailored to the person you're gifting.</div></div>
+    <div class="why-item reveal"><div class="why-icon"><svg><use href="#icon-flower"/></svg></div><div class="why-title">Lasting Memories</div><div class="why-desc">These aren't gifts that fade. They become keepsakes held for a lifetime.</div></div>
+    <div class="why-item reveal"><div class="why-icon"><svg><use href="#icon-giftbox"/></svg></div><div class="why-title">Gift-Ready</div><div class="why-desc">Every order arrives beautifully wrapped, ready to make someone's day.</div></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-bookmarks" aria-hidden="true">
+    <div class="cb" style="background:#c8556e;color:#fff"><i class="fa-solid fa-leaf"></i></div>
+    <div class="cb" style="background:#c8963c;color:#fff"><i class="fa-solid fa-book-open"></i></div>
+    <div class="cb" style="background:#8fa882;color:#fff"><i class="fa-solid fa-envelope-open-text"></i></div>
+    <div class="cb" style="background:#8b2e45;color:#fff"><i class="fa-solid fa-gift"></i></div>
+  </div>
+
+  <div class="contact-inner">
+    <div class="contact-left reveal">
+      <div class="eyebrow">Start your story</div>
+      <h2 class="section-title" style="text-align:left">Let's make something<br><em style="font-style:italic">just for them.</em></h2>
+      <p style="font-size:.88rem;color:var(--text-muted);line-height:1.75;margin-bottom:2rem;font-weight:300">Tell us about the person you're gifting, the occasion, and your ideas. Already added things to your cart? They'll be included automatically — just fill in your details below and we'll reach you on WhatsApp within 24 hours.</p>
+      <div class="contact-info-items">
+        <div class="ci">
+          <div class="ci-icon"><i class="fa-brands fa-whatsapp" style="color:#25D366;font-size:1.3rem"></i></div>
+          <div><div class="ci-label">WhatsApp</div><div class="ci-val">+91 98765 43210</div></div>
         </div>
+        <div class="ci">
+          <div class="ci-icon"><i class="fa-brands fa-instagram" style="color:#E1306C;font-size:1.3rem"></i></div>
+          <div><div class="ci-label">Instagram</div><div class="ci-val">@momentsremind</div></div>
+        </div>
+        <div class="ci">
+          <div class="ci-icon"><i class="fa-solid fa-envelope" style="color:var(--rose);font-size:1.1rem"></i></div>
+          <div><div class="ci-label">Email</div><div class="ci-val">hello@momentsremind.in</div></div>
+        </div>
+        <div class="ci">
+          <div class="ci-icon"><i class="fa-solid fa-clock" style="color:var(--gold);font-size:1.1rem"></i></div>
+          <div><div class="ci-label">Response Time</div><div class="ci-val">Within 24 hours · Mon–Sat</div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-form reveal" id="contactFormWrap">
+      <div class="form-title">Send us your story</div>
+      <div class="form-sub">Fill this in and we'll send it straight to our WhatsApp. No account needed — just your story.</div>
+
+      <!-- CART ITEMS DISPLAY IN CHECKOUT -->
+      <div id="checkoutItemsBlock" class="checkout-items-block" hidden>
+        <div class="checkout-items-title"><i class="fa-solid fa-bag-shopping"></i> Your Cart Items</div>
+        <div id="checkoutItemsList"></div>
+        <div class="checkout-subtotal"><span>Estimated Total</span><span id="checkoutTotal">₹0</span></div>
+      </div>
+
+      <div class="form-cart-hint" id="formCartHint" hidden><i class="fa-solid fa-cart-shopping"></i> <span id="formCartCount">0</span> item(s) from your cart will be included automatically.</div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label" for="f-name">Your Name</label>
+          <input class="form-input" type="text" id="f-name" placeholder="Priya Sharma" autocomplete="name">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="f-phone">Phone / WhatsApp</label>
+          <input class="form-input" type="tel" id="f-phone" placeholder="+91 98765 43210" autocomplete="tel">
+        </div>
+      </div>
+
+      <!-- OPTIONAL CUSTOMISATION ADD-ON -->
+      <div class="optional-custom">
+        <div class="optional-custom-title"><i class="fa-solid fa-wand-magic-sparkles"></i> Want to add something extra? <span class="optional-badge">Optional</span></div>
+        <textarea class="form-textarea" id="f-addons" placeholder="e.g. a personalised name tag... anything extra you'd love!" style="min-height:70px"></textarea>
+      </div>
+
+      <!-- CUSTOM ORDER TOGGLE -->
+      <button type="button" class="custom-toggle" id="customToggleBtn" onclick="toggleCustomOrder()" aria-expanded="false" aria-controls="customOrderPanel">
+        <span class="custom-toggle-left">
+          <i class="fa-solid fa-feather-pointed"></i>
+          Not ordering from the shop? Request a fully custom design
+        </span>
+        <i class="fa-solid fa-chevron-down custom-toggle-chevron" id="customToggleChevron"></i>
+      </button>
+
+      <div class="custom-order-panel" id="customOrderPanel" hidden>
+        <div class="custom-order-panel-inner">
+          <p class="custom-order-intro">Tell us who it's for and what you're imagining — we'll design something one-of-a-kind around it.</p>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="f-gift">Gift Type</label>
+              <select class="form-select" id="f-gift">
+                <option value="">— Choose a gift —</option>
+                <option>Explosion Box</option>
+                <option>Handmade Bookmark Set</option>
+                <option>Decorated Photo Frame</option>
+                <option>Flower Bouquet</option>
+                <option>Handwritten Letter</option>
+                <option>Wall Hanger</option>
+                <option>Greeting Card</option>
+                <option>Something else entirely</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="f-occasion">Occasion</label>
+              <select class="form-select" id="f-occasion">
+                <option value="">— What's the occasion? —</option>
+                <option>Birthday</option>
+                <option>Anniversary</option>
+                <option>Valentine's Day</option>
+                <option>Mother's / Father's Day</option>
+                <option>Wedding / Engagement</option>
+                <option>Farewell / Graduation</option>
+                <option>Just because</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="f-story"><i class="fa-solid fa-heart" style="color:var(--rose)"></i> Tell us the story</label>
+            <textarea class="form-textarea" id="f-story" placeholder="Tell us about the person you're gifting — their name, what they love, your favourite memory together, and any ideas you have. The more you share, the more personal we can make it..."></textarea>
+          </div>
+
+          <div class="form-group" style="margin-bottom:0">
+            <label class="form-label" for="f-budget">Approx. Budget</label>
+            <select class="form-select" id="f-budget">
+              <option value="">— Select a range —</option>
+              <option>Under ₹500</option>
+              <option>₹500 – ₹1,000</option>
+              <option>₹1,000 – ₹2,500</option>
+              <option>₹2,500 – ₹5,000</option>
+              <option>₹5,000+</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <button class="btn-wa" id="sendBtn" onclick="sendToWhatsApp()">
+        <i class="fa-brands fa-whatsapp" id="waIcon" style="font-size:1.2rem"></i>
+        <span id="sendLabel">Send to WhatsApp</span>
+      </button>
+      <div class="form-note">
+        This will open WhatsApp with your message pre-filled.<br>
+        We reply within 24 hours · All orders are 100% custom.
       </div>
     </div>
   </div>
@@ -601,165 +1258,557 @@ footer{background:var(--ink);color:rgba(255,255,255,.65);padding:clamp(3rem,7vw,
 
 <!-- CTA BAND -->
 <section id="cta-band">
-  <div class="eyebrow" style="color:rgba(255,255,255,.6);position:relative;z-index:1">Have something in mind?</div>
-  <h2 class="section-title" style="margin-bottom:.75rem">Let's make your gift<br><em style="font-family:'Cormorant Garamond',serif;font-style:italic">one of a kind.</em></h2>
-  <p class="section-sub" style="margin-bottom:2.5rem;position:relative;z-index:1">Tell us who it's for and what you'd like — we'll handle the rest.</p>
-  <a href="https://wa.me/91XXXXXXXXXX" class="btn-white" style="position:relative;z-index:1">Start a Custom Order →</a>
-  <div class="cta-note">Available on WhatsApp · Instagram DMs · Email</div>
+  <img class="cta-seal" src="images/logo.png" alt="Moments Remind">
+  <div class="eyebrow" style="color:rgba(255,255,255,.7);position:relative;z-index:1;margin-bottom:.5rem">The gift that becomes a memory</div>
+  <h2 class="section-title">Ready to create something <em style="font-style:italic;color:rgba(255,255,255,.85)">unforgettable?</em></h2>
+  <p class="section-sub">Every keepsake we make begins with your story. Tell us who it's for, and we'll do the rest — with love.</p>
+  <a href="#contact" class="btn-white">
+    <i class="fa-brands fa-whatsapp"></i> Start Your Order
+  </a>
+  <div class="cta-note">No account needed · WhatsApp-based · Reply within 24 hrs</div>
+  <div class="cta-features">
+    <div class="cta-feat"><i class="fa-solid fa-hand-holding-heart"></i> 100% Handmade</div>
+    <div class="cta-feat"><i class="fa-solid fa-truck-fast"></i> Pan-India Delivery</div>
+    <div class="cta-feat"><i class="fa-solid fa-star"></i> 1,200+ Happy Customers</div>
+    <div class="cta-feat"><i class="fa-solid fa-lock"></i> Secure WhatsApp Order</div>
+  </div>
 </section>
-
 <!-- FOOTER -->
 <footer>
   <div class="footer-grid">
-    <div class="footer-brand">
-      <span class="footer-logo">Moments Remind</span>
+    <div>
+      <div class="footer-brand"></div>
       <p class="footer-tagline">Handmade gifts & memory keepsakes, crafted with love from our little studio in India.</p>
       <div class="footer-social">
-        <a class="soc" href="#" aria-label="Instagram">📷</a>
-        <a class="soc" href="#" aria-label="WhatsApp">💬</a>
-        <a class="soc" href="#" aria-label="Pinterest">📌</a>
-        <a class="soc" href="#" aria-label="YouTube">▶</a>
+        <a class="soc" href="https://www.instagram.com/mr_momentsremind/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a class="soc" href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a class="soc" href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+        <a class="soc" href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
       </div>
     </div>
     <div>
       <div class="footer-col-title">Collections</div>
       <ul class="footer-links">
-        <li><a href="#">Explosion Boxes</a></li>
-        <li><a href="#">Handmade Bookmarks</a></li>
-        <li><a href="#">Photo Frames</a></li>
-        <li><a href="#">Memory Albums</a></li>
-        <li><a href="#">Scrapbooks</a></li>
-        <li><a href="#">Love Letter Kits</a></li>
+        <li><a href="#collections">Explosion Boxes</a></li>
+        <li><a href="#collections">Handmade Bookmarks</a></li>
+        <li><a href="#collections">Photo Frames</a></li>
+        <li><a href="#collections">Flower Bouquets</a></li>
+        <li><a href="#collections">Handwritten Letters</a></li>
       </ul>
     </div>
     <div>
       <div class="footer-col-title">About</div>
       <ul class="footer-links">
         <li><a href="#">Our Story</a></li>
-        <li><a href="#">How We Work</a></li>
-        <li><a href="#">Memory Gallery</a></li>
+        <li><a href="#process">How We Work</a></li>
+        <li><a href="#gallery">Instagram</a></li>
         <li><a href="#">FAQs</a></li>
-        <li><a href="#">Reviews</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
       </ul>
     </div>
     <div>
       <div class="footer-col-title">Order</div>
       <ul class="footer-links">
-        <li><a href="#">Custom Orders</a></li>
-        <li><a href="#">Bulk / Corporate</a></li>
+        <li><a href="#contact" onclick="requestCustomOrderFlow()">Custom Orders</a></li>
+        <li><a href="#contact">Bulk / Corporate</a></li>
         <li><a href="#">Shipping Info</a></li>
         <li><a href="#">Returns Policy</a></li>
-        <li><a href="#">Contact Us</a></li>
+        <li><a href="#contact">Contact Us</a></li>
       </ul>
     </div>
   </div>
   <div class="footer-bottom">
-    <div class="footer-copy">© 2025 Moments Remind · Handmade with ♥ · All rights reserved</div>
-    <div class="footer-copy">Made in India 🇮🇳</div>
+    <div class="footer-copy">© 2026 Mr Moments Remind · All rights reserved</div>
+    <div class="footer-copy">Made in India</div>
   </div>
 </footer>
 
-<button id="btt" onclick="scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">↑</button>
+<!-- BACK TO TOP -->
+<button id="btt" onclick="scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top" title="Back to top">
+  <svg width="20" height="20" viewBox="0 0 36 36" fill="none">
+    <path d="M32 18L4 4l4 14-4 14 28-14z" fill="white" opacity=".9"/>
+  </svg>
+</button>
 
 <script>
 (function(){
   const noMotion = matchMedia('(prefers-reduced-motion:reduce)').matches;
 
-  // Loader
+  /* ---------- PRODUCT CATALOG ---------- */
+  const PRODUCTS = {
+    bookmarks:{name:'Pressed-Flower Bookmarks', price:149},
+    bouquet:{name:'Fresh Flower Bouquet', price:599},
+    combo:{name:'Bouquet + Gift Box Combo', price:1299},
+    explosion:{name:'Surprise Explosion Box', price:799},
+    letters:{name:'Handwritten Letter', price:249},
+    frames:{name:'Personalised Photo Frame', price:499},
+    hanger:{name:"Father's Day Wall Hanger", price:699},
+    card:{name:'Greeting Card', price:99}
+  };
+  const ICONS_BY_KEY = {bookmarks:'icon-bookmark',bouquet:'icon-flower',combo:'icon-giftbox',explosion:'icon-burst',letters:'icon-letter',frames:'icon-frame',hanger:'icon-hanger',card:'icon-card'};
+
+  /* ---------- LOADER ---------- */
   setTimeout(()=>{
     document.getElementById('loader').classList.add('out');
     setTimeout(()=>document.getElementById('loader').style.display='none',700);
-  }, 1600);
+  },1600);
 
-  // Mobile nav
+  /* ---------- MOBILE NAV ---------- */
   const ham = document.getElementById('ham');
   const mMenu = document.getElementById('mMenu');
-  const mClose = document.getElementById('mClose');
+  document.getElementById('mClose').addEventListener('click',closeMenu);
   function openMenu(){mMenu.style.display='flex';requestAnimationFrame(()=>mMenu.classList.add('open'));ham.classList.add('open');document.body.style.overflow='hidden'}
-  function closeMnuFn(){mMenu.classList.remove('open');ham.classList.remove('open');document.body.style.overflow='';setTimeout(()=>mMenu.style.display='none',300)}
-  window.closeMemu = closeMnuFn;
-  ham.addEventListener('click',()=>mMenu.classList.contains('open')?closeMnuFn():openMenu());
-  mClose.addEventListener('click',closeMnuFn);
-  document.querySelectorAll('.mobile-menu a').forEach(a=>a.addEventListener('click',closeMnuFn));
+  function closeMenu(){mMenu.classList.remove('open');ham.classList.remove('open');document.body.style.overflow='';setTimeout(()=>mMenu.style.display='none',300)}
+  ham.addEventListener('click',()=>mMenu.classList.contains('open')?closeMenu():openMenu());
+  mMenu.querySelectorAll('a').forEach(a=>a.addEventListener('click',closeMenu));
 
-  // Scroll events
+  /* ---------- SCROLL BEHAVIORS ---------- */
   const nav = document.getElementById('nav');
   const prog = document.getElementById('prog');
   const btt = document.getElementById('btt');
+  const ropeKnot = document.getElementById('rope-knot');
+  const sections = ['hero','collections','gallery','process','testimonials','why','contact'];
+  const navBms = document.querySelectorAll('.nav-bm[data-section]');
+
   let ticking = false;
   window.addEventListener('scroll',()=>{
     if(!ticking){requestAnimationFrame(()=>{
       const sy = scrollY;
       const max = document.body.scrollHeight - innerHeight;
-      prog.style.width = (max>0?sy/max*100:0)+'%';
-      nav.classList.toggle('solid', sy>60);
-      btt.classList.toggle('show', sy>500);
-      ticking = false;
+      const pct = max>0?sy/max:0;
+      prog.style.width = (pct*100)+'%';
+      nav.classList.toggle('solid',sy>60);
+      btt.classList.toggle('show',sy>500);
+
+      const ropeH = document.getElementById('rope-wrap').offsetHeight;
+      ropeKnot.style.top = Math.max(0,Math.min(ropeH-20, pct*(ropeH-20)))+'px';
+
+      let active='';
+      sections.forEach(id=>{
+        const el=document.getElementById(id);
+        if(el){const r=el.getBoundingClientRect();if(r.top<=120&&r.bottom>120)active=id;}
+      });
+      navBms.forEach(a=>{
+        const s=a.dataset.section;
+        a.classList.toggle('active', s===active || (active==='hero'&&!s));
+      });
+
+      ticking=false;
     });ticking=true}
   },{passive:true});
 
-  // Reveal on scroll
+  function updateRopePath(){
+    const totalH = document.body.scrollHeight;
+    document.getElementById('rope-svg').setAttribute('height',totalH);
+    document.getElementById('rope-svg').setAttribute('viewBox','0 0 24 '+totalH);
+    const seg = totalH/6;
+    document.getElementById('rope-path').setAttribute('d',
+      `M12,0 Q20,${seg*.5} 4,${seg} Q20,${seg*1.5} 4,${seg*2} Q20,${seg*2.5} 4,${seg*3} Q20,${seg*3.5} 4,${seg*4} Q20,${seg*4.5} 4,${seg*5} Q20,${seg*5.5} 4,${seg*6}`
+    );
+    document.getElementById('rope-wrap').style.height = totalH+'px';
+  }
+  updateRopePath();
+  window.addEventListener('resize',updateRopePath);
+
+  /* ---------- SCROLL REVEAL ---------- */
   const reveals = document.querySelectorAll('.reveal');
-  const obs = new IntersectionObserver(entries=>{
-    entries.forEach((e,i)=>{
-      if(e.isIntersecting){
-        setTimeout(()=>e.target.classList.add('in'), i*80);
-        obs.unobserve(e.target);
-      }
-    });
+  const revObs = new IntersectionObserver(entries=>{
+    entries.forEach((e,i)=>{if(e.isIntersecting){setTimeout(()=>e.target.classList.add('in'),i*60);revObs.unobserve(e.target);}});
   },{threshold:.08});
-  reveals.forEach(el=>obs.observe(el));
+  reveals.forEach(el=>revObs.observe(el));
 
-  // Count-up stats
-  const countEls = document.querySelectorAll('[data-count]');
-  const cObs = new IntersectionObserver(entries=>{
-    entries.forEach(e=>{
-      if(e.isIntersecting){
-        const el = e.target;
-        const target = +el.dataset.count;
-        const suffix = target>=100?'%':'';
-        const displayTarget = target===1200?'1,200+':target===48?'48+':'100%';
-        if(noMotion){el.textContent=displayTarget;cObs.unobserve(el);return}
-        let start = 0;
-        const dur = 1600;
-        const step = ts=>{
-          if(!start)start=ts;
-          const p = Math.min((ts-start)/dur,1);
-          const eased = 1-Math.pow(1-p,3);
-          const val = Math.round(eased*target);
-          el.textContent = target===1200?(val>=1200?'1,200+':val.toLocaleString()):(target===48?(val>=48?'48+':val):(val+'%'));
-          if(p<1)requestAnimationFrame(step);
-        };
-        requestAnimationFrame(step);
-        cObs.unobserve(el);
-      }
+  const steps = document.querySelectorAll('.step');
+  const stObs = new IntersectionObserver(entries=>{
+    entries.forEach((e,i)=>{if(e.isIntersecting){setTimeout(()=>e.target.classList.add('in'),i*150);stObs.unobserve(e.target);}});
+  },{threshold:.2});
+  steps.forEach(el=>stObs.observe(el));
+
+  /* ---------- COUNT-UP ---------- */
+  document.querySelectorAll('[data-count]').forEach(el=>{
+    new IntersectionObserver(([e])=>{
+      if(!e.isIntersecting)return;
+      const target=+el.dataset.count;
+      if(noMotion){el.textContent=target===1200?'1,200+':target===48?'48+':'100%';return}
+      let t0;
+      const dur=1600;
+      const step=ts=>{
+        if(!t0)t0=ts;
+        const p=Math.min((ts-t0)/dur,1);
+        const v=Math.round((1-Math.pow(1-p,3))*target);
+        el.textContent=target===1200?(v>=1200?'1,200+':v):target===48?(v>=48?'48+':v):(v+'%');
+        if(p<1)requestAnimationFrame(step);
+      };
+      requestAnimationFrame(step);
+    },{threshold:.5}).observe(el);
+  });
+
+  /* ---------- 3D CARD MOUSE FOLLOW ---------- */
+  const card3d = document.getElementById('card3d');
+  if(card3d){
+    card3d.addEventListener('mousemove',e=>{
+      const r=card3d.parentElement.getBoundingClientRect();
+      const x=(e.clientX-r.left-r.width/2)/r.width;
+      const y=(e.clientY-r.top-r.height/2)/r.height;
+      card3d.style.animation='none';
+      card3d.style.transform=`rotateY(${x*35}deg) rotateX(${-y*25}deg)`;
     });
-  },{threshold:.5});
-  countEls.forEach(el=>cObs.observe(el));
-
-  // Floating hearts in hero
-  if(!noMotion){
-    const hero = document.getElementById('hero');
-    const s = document.createElement('style');
-    s.textContent='@keyframes fh{0%{opacity:0;transform:translateY(0) scale(.8)}20%{opacity:.6}100%{opacity:0;transform:translateY(-120px) scale(1) rotate(20deg)}}';
-    document.head.appendChild(s);
-    setInterval(()=>{
-      const h = document.createElement('div');
-      const sz = 8+Math.random()*10;
-      h.style.cssText='position:absolute;left:'+(5+Math.random()*60)+'%;bottom:5%;pointer-events:none;opacity:0;animation:fh '+(3+Math.random()*3)+'s ease-out forwards;font-size:'+sz+'px;color:rgba(200,85,110,.5)';
-      h.textContent='♥';
-      hero.appendChild(h);
-      setTimeout(()=>h.remove(),6000);
-    }, 1800);
+    card3d.addEventListener('mouseleave',()=>{
+      card3d.style.animation='';
+      card3d.style.transform='';
+    });
   }
 
-  // Smooth anchor scroll
+  /* ---------- 3D TILT (testimonial & craft cards only — product cards stay still so cart controls are easy to click) ---------- */
+  document.querySelectorAll('.testi-card,.craft-card').forEach(card=>{
+    card.addEventListener('mousemove',e=>{
+      const r=card.getBoundingClientRect();
+      const x=(e.clientX-r.left)/r.width-.5;
+      const y=(e.clientY-r.top)/r.height-.5;
+      card.style.transform=`translateY(-8px) rotateX(${-y*8}deg) rotateY(${x*8}deg) scale(1.02)`;
+    });
+    card.addEventListener('mouseleave',()=>{card.style.transform='';});
+  });
+
+  /* ---------- SMOOTH ANCHOR ---------- */
   document.querySelectorAll('a[href^="#"]').forEach(a=>{
     a.addEventListener('click',e=>{
-      const target = document.querySelector(a.getAttribute('href'));
-      if(target){e.preventDefault();target.scrollIntoView({behavior:'smooth',block:'start'})}
+      const t=document.querySelector(a.getAttribute('href'));
+      if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth',block:'start'});}
     });
   });
+
+  /* =====================================================================
+     CART SYSTEM
+  ===================================================================== */
+  function loadCart(){ try{ const raw=localStorage.getItem('mr_cart'); return raw?JSON.parse(raw):[]; }catch(e){ return []; } }
+  function saveCart(){ try{ localStorage.setItem('mr_cart', JSON.stringify(cart)); }catch(e){} }
+  let cart = loadCart();
+
+  function escapeHtml(str){
+    return String(str).replace(/[&<>"']/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  }
+
+  window.selectVariant = function(btn, imgSrc){
+    const card = btn.closest('.prod-card');
+    card.querySelectorAll('.variant-chip').forEach(c=>c.classList.remove('active'));
+    btn.classList.add('active');
+    const photo = card.querySelector('.prod-photo');
+    const img = photo.querySelector('img');
+    photo.classList.remove('no-photo');
+    img.onerror = function(){ this.onerror=null; photo.classList.add('no-photo'); };
+    img.src = imgSrc;
+  };
+
+  function updateLivePrice(card, basePrice){
+    const qty = parseInt(card.querySelector('.qty-input').value,10)||1;
+    const lp = card.querySelector('.lp-val');
+    if(lp) lp.textContent = (basePrice*qty).toLocaleString('en-IN');
+  }
+
+  window.stepQty = function(btn, delta){
+    const wrap = btn.parentElement;
+    const input = wrap.querySelector('.qty-input');
+    let v = (parseInt(input.value,10)||1) + delta;
+    v = Math.max(1, Math.min(20, v));
+    input.value = v;
+    const card = btn.closest('.prod-card');
+    if(card){ const key = card.dataset.key; updateLivePrice(card, PRODUCTS[key].price); }
+  };
+
+  function flyToCart(fromEl){
+    const cartBtn = document.getElementById('cartBtn');
+    const r1 = fromEl.getBoundingClientRect();
+    const r2 = cartBtn.getBoundingClientRect();
+    const seal = document.createElement('img');
+    seal.src = 'logo.png';
+    seal.className = 'flying-seal';
+    seal.style.left = (r1.left + r1.width/2 - 13) + 'px';
+    seal.style.top = (r1.top + r1.height/2 - 13) + 'px';
+    document.body.appendChild(seal);
+    const dx = (r2.left + r2.width/2) - (r1.left + r1.width/2);
+    const dy = (r2.top + r2.height/2) - (r1.top + r1.height/2);
+    seal.style.setProperty('--dx', dx+'px');
+    seal.style.setProperty('--dy', dy+'px');
+    let done = false;
+    function finish(){
+      if(done) return; done = true;
+      seal.remove();
+      cartBtn.classList.add('bump');
+      setTimeout(()=>cartBtn.classList.remove('bump'),350);
+    }
+    requestAnimationFrame(()=> seal.classList.add('go'));
+    seal.addEventListener('animationend', finish);
+    setTimeout(finish, 800);
+  }
+
+  let toastTimer;
+  function showToast(msg){
+    const t = document.getElementById('toast');
+    t.textContent = msg;
+    t.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(()=>t.classList.remove('show'), 2600);
+  }
+
+  window.addToCart = function(key, btnEl){
+    const card = btnEl.closest('.prod-card');
+    const product = PRODUCTS[key];
+    const qty = parseInt(card.querySelector('.qty-input').value,10) || 1;
+    const noteEl = card.querySelector('.note-input');
+    const note = noteEl ? noteEl.value.trim() : '';
+    const chip = card.querySelector('.variant-chip.active');
+    const variant = chip ? chip.textContent.trim() : null;
+    const img = card.querySelector('.prod-photo img');
+    const image = img.getAttribute('src');
+
+    const existing = cart.find(it=>it.key===key && it.variant===variant && it.note===note);
+    if(existing){ existing.qty += qty; }
+    else { cart.push({key, name:product.name, variant, unitPrice:product.price, qty, note, image}); }
+
+    saveCart(); renderCartBadge(); renderCartDrawer();
+    flyToCart(btnEl);
+    showToast(`${product.name}${variant?' — '+variant:''} added to your cart`);
+
+    card.querySelector('.qty-input').value = 1;
+    updateLivePrice(card, product.price);
+    if(noteEl) noteEl.value='';
+    const det = card.querySelector('details'); if(det) det.open = false;
+  };
+
+  window.cartChangeQty = function(idx, delta){
+    const it = cart[idx]; if(!it) return;
+    it.qty += delta;
+    if(it.qty<=0){ cart.splice(idx,1); }
+    saveCart(); renderCartDrawer();
+  };
+  window.cartRemove = function(idx){ cart.splice(idx,1); saveCart(); renderCartDrawer(); };
+
+  function renderCartBadge(){
+    const totalQty = cart.reduce((s,it)=>s+it.qty,0);
+    const badge = document.getElementById('cartCount');
+    badge.textContent = totalQty;
+    badge.hidden = totalQty===0;
+    const mCount = document.getElementById('mCartCount');
+    if(mCount) mCount.textContent = totalQty;
+    const titleCount = document.getElementById('cartTitleCount');
+    if(titleCount){
+      titleCount.hidden = totalQty===0;
+      titleCount.textContent = totalQty + (totalQty===1 ? ' item' : ' items');
+    }
+    const hint = document.getElementById('formCartHint');
+    if(hint){
+      hint.hidden = cart.length===0;
+      const c = document.getElementById('formCartCount');
+      if(c) c.textContent = totalQty;
+    }
+    // Update checkout items block in contact form
+    const ckBlock = document.getElementById('checkoutItemsBlock');
+    const ckList = document.getElementById('checkoutItemsList');
+    const ckTotal = document.getElementById('checkoutTotal');
+    if(ckBlock && ckList && ckTotal){
+      if(cart.length > 0){
+        ckBlock.hidden = false;
+        ckList.innerHTML = cart.map(it=>{
+          const label = escapeHtml(it.name) + (it.variant ? ' — '+escapeHtml(it.variant) : '') + ' ×'+it.qty;
+          const price = '₹'+(it.unitPrice*it.qty).toLocaleString('en-IN');
+          return `<div class="checkout-item-row"><span class="checkout-item-name">${label}</span><span class="checkout-item-price">${price}</span></div>`;
+        }).join('');
+        const subtotal = cart.reduce((s,it)=>s+it.unitPrice*it.qty,0);
+        ckTotal.textContent = '₹'+subtotal.toLocaleString('en-IN');
+      } else {
+        ckBlock.hidden = true;
+        ckList.innerHTML = '';
+        ckTotal.textContent = '₹0';
+      }
+    }
+    const ckBtn = document.getElementById('cartCheckoutBtn');
+    if(ckBtn) ckBtn.disabled = cart.length===0;
+  }
+
+  function renderCartDrawer(){
+    const body = document.getElementById('cartBody');
+    if(!cart.length){
+      body.innerHTML = `<div class="cart-empty"><svg><use href="#icon-bag"/></svg><p>Your cart is empty.<br>Browse the collections and add something they'll love.</p><button type="button" class="cart-empty-cta" onclick="closeCart();document.getElementById('collections').scrollIntoView({behavior:'smooth'})">Browse Collections</button></div>`;
+    } else {
+      body.innerHTML = cart.map((it,idx)=>{
+        const fallbackIcon = ICONS_BY_KEY[it.key] || 'icon-bag';
+        return `<div class="cart-item">
+          <div class="ci-thumb"><img src="${it.image}" alt="" onerror="this.style.display='none';this.parentElement.classList.add('no-photo')"><svg class="ci-fallback-icon"><use href="#${fallbackIcon}"/></svg></div>
+          <div class="ci-info">
+            <div class="ci-name">${escapeHtml(it.name)}${it.variant?' — '+escapeHtml(it.variant):''}</div>
+            ${it.note?`<div class="ci-note">"${escapeHtml(it.note)}"</div>`:''}
+            <div class="ci-row">
+              <div class="qty-stepper sm">
+                <button type="button" onclick="cartChangeQty(${idx},-1)" aria-label="Decrease quantity">−</button>
+                <span>${it.qty}</span>
+                <button type="button" onclick="cartChangeQty(${idx},1)" aria-label="Increase quantity">+</button>
+              </div>
+              <div class="ci-price">₹${(it.unitPrice*it.qty).toLocaleString('en-IN')}</div>
+              <button class="ci-remove" type="button" onclick="cartRemove(${idx})" aria-label="Remove item">&times;</button>
+            </div>
+          </div>
+        </div>`;
+      }).join('');
+    }
+    const subtotal = cart.reduce((s,it)=>s+it.unitPrice*it.qty,0);
+    const totalQty = cart.reduce((s,it)=>s+it.qty,0);
+    document.getElementById('cartSubtotal').textContent = '₹'+subtotal.toLocaleString('en-IN');
+    let itemsLine = document.getElementById('cartItemsLine');
+    if(!itemsLine){
+      itemsLine = document.createElement('div');
+      itemsLine.id = 'cartItemsLine';
+      itemsLine.className = 'cart-item-total';
+      document.getElementById('cartSubtotal').insertAdjacentElement('beforebegin', itemsLine);
+    }
+    itemsLine.innerHTML = `<span>${cart.length} ${cart.length===1?'design':'designs'}</span><span>${totalQty} ${totalQty===1?'item':'items'} total</span>`;
+    itemsLine.hidden = cart.length===0;
+    renderCartBadge();
+  }
+
+  window.openCart = function(){
+    document.getElementById('cartOverlay').classList.add('open');
+    document.getElementById('cartDrawer').classList.add('open');
+    document.getElementById('cartDrawer').setAttribute('aria-hidden','false');
+    document.body.style.overflow='hidden';
+  };
+  window.closeCart = function(){
+    document.getElementById('cartOverlay').classList.remove('open');
+    document.getElementById('cartDrawer').classList.remove('open');
+    document.getElementById('cartDrawer').setAttribute('aria-hidden','true');
+    document.body.style.overflow='';
+  };
+  document.addEventListener('keydown', e=>{ if(e.key==='Escape') closeCart(); });
+
+  window.requestCustomOrderFlow = function(){
+    setTimeout(()=>{
+      const panel = document.getElementById('customOrderPanel');
+      const btn = document.getElementById('customToggleBtn');
+      if(panel && !panel.classList.contains('open')){ toggleCustomOrder(); }
+      setTimeout(()=>{
+        const nameInput = document.getElementById('f-name');
+        if(nameInput) nameInput.focus({preventScroll:true});
+      },350);
+    },550);
+  };
+
+  window.toggleCustomOrder = function(){
+    const panel = document.getElementById('customOrderPanel');
+    const btn = document.getElementById('customToggleBtn');
+    const isOpen = panel.classList.contains('open');
+    if(isOpen){
+      panel.classList.remove('open');
+      btn.classList.remove('open');
+      btn.setAttribute('aria-expanded','false');
+    } else {
+      panel.hidden = false;
+      requestAnimationFrame(()=>{
+        panel.classList.add('open');
+        btn.classList.add('open');
+        btn.setAttribute('aria-expanded','true');
+      });
+    }
+  };
+
+  window.proceedToCheckout = function(){
+    closeCart();
+    const contact = document.getElementById('contact');
+    contact.scrollIntoView({behavior:'smooth', block:'start'});
+    setTimeout(()=>{
+      const nameInput = document.getElementById('f-name');
+      if(nameInput) nameInput.focus({preventScroll:true});
+      const formWrap = document.getElementById('contactFormWrap');
+      formWrap.classList.add('flash');
+      setTimeout(()=>formWrap.classList.remove('flash'), 1200);
+    }, 550);
+  };
+
+  function buildCartBlock(){
+    if(!cart.length) return '';
+    const lines = cart.map(it=>{
+      let l = `- ${it.name}${it.variant?' — '+it.variant:''} x ${it.qty} (₹${(it.unitPrice*it.qty).toLocaleString('en-IN')})`;
+      if(it.note) l += `\n   Note: "${it.note}"`;
+      return l;
+    }).join('\n');
+    const subtotal = cart.reduce((s,it)=>s+it.unitPrice*it.qty,0);
+    return `\n*Cart Items:*\n${lines}\n*Estimated Subtotal:* ₹${subtotal.toLocaleString('en-IN')}\n`;
+  }
+
+  /* ---------- WHATSAPP FORM ---------- */
+  window.sendToWhatsApp = function(){
+    const name=document.getElementById('f-name').value.trim();
+    const phone=document.getElementById('f-phone').value.trim();
+    const gift=document.getElementById('f-gift').value;
+    const occasion=document.getElementById('f-occasion').value;
+    const story=document.getElementById('f-story').value.trim();
+    const budget=document.getElementById('f-budget').value;
+    const addons=(document.getElementById('f-addons')||{}).value||'';
+
+    if(!name){alert('Please enter your name.');return}
+    if(!story && cart.length===0){alert("Please add items to your cart, or open \"Request a fully custom design\" and tell us your story.");return}
+
+    const cartBlock = buildCartBlock();
+
+    let msg = `*New Order — Moments Remind*\n`;
+    msg += `━━━━━━━━━━━━━━━━━━━━━━\n\n`;
+    msg += `*Customer Details*\n`;
+    msg += `Name: ${name}\n`;
+    msg += phone ? `Phone: ${phone}\n` : '';
+    if(gift || occasion || budget){
+      msg += `\n*Custom Gift Request*\n`;
+      msg += gift ? `Gift Type: ${gift}\n` : '';
+      msg += occasion ? `Occasion: ${occasion}\n` : '';
+      msg += budget ? `Budget: ${budget}\n` : '';
+    }
+    if(cartBlock){
+      msg += `\n${cartBlock}`;
+    }
+    if(addons.trim()){
+      msg += `\n*Optional Add-ons Requested:*\n${addons.trim()}\n`;
+    }
+    if(story){
+      msg += `\n*Their Story:*\n${story}\n`;
+    }
+    msg += `\n━━━━━━━━━━━━━━━━━━━━━━\n`;
+    msg += `_Sent via momentsremind.in_`;
+
+    const btn = document.getElementById('sendBtn');
+    const icon = document.getElementById('waIcon');
+    const label = document.getElementById('sendLabel');
+    if(icon){
+      icon.className = 'fa-solid fa-paper-plane';
+      icon.style.fontSize = '1.1rem';
+    }
+    label.textContent='Sending...';
+    btn.disabled=true;
+
+    setTimeout(()=>{
+      const waNum='919876543210'; // replace with actual number
+      const url=`https://wa.me/${waNum}?text=${encodeURIComponent(msg)}`;
+      window.open(url,'_blank');
+      if(icon){
+        icon.className = 'fa-solid fa-circle-check';
+        icon.style.color = '#fff';
+      }
+      label.textContent='Opening WhatsApp…';
+
+      cart = []; saveCart(); renderCartBadge(); renderCartDrawer();
+
+      setTimeout(()=>{
+        if(icon){
+          icon.className = 'fa-brands fa-whatsapp';
+          icon.style.fontSize = '1.2rem';
+          icon.style.color = '';
+        }
+        label.textContent='Send to WhatsApp';
+        btn.disabled=false;
+      },3000);
+    },900);
+  };
+
+  /* ---------- INIT ---------- */
+  renderCartBadge();
+  renderCartDrawer();
+
 })();
 </script>
 </body>
